@@ -22,8 +22,9 @@ Vi kan fx bruge Architecture Decision Records, som beskrevet af Michael Nygaard 
 ## Konsekvenser
 
 1. ADR arkivet bør være let tilgængelig, fx i platformens Git repository.
-1. Pull requests medfører desuden en velkendt review process og er en naturlig del af udviklernes workflow.
+1. Pull requests medfører en velkendt review process og er en naturlig del af udviklernes workflow.
 1. Én ADR beskriver én væsentlig beslutning for en bestemt service - noget der har betydning for hvordan hele platformen drives. 
 1. Konsekvenserne af én ADR vil med stor sandsynlighed blive konteksten for efterfølgende ADRs. 
-1. Motivationen bag tidligere beslutninger er synlig for alle, nu og i fremtiden. Når gamle beslutninger ændres vil ændringerne fremgå i platformens kontekst, også selvom team struktur og organisation ændrer sig over tid.
+1. Motivationen bag tidligere beslutninger er synlig for alle, nu og i fremtiden.
+1. Når gamle beslutninger ændres vil ændringerne fremgå i platformens kontekst, også selvom team struktur og organisation ændrer sig over tid.
 1. Det letter kommunikationen på tværs af teams ved at give en klar forklaring på, hvorfor bestemte beslutninger blev truffet.
