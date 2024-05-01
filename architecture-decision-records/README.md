@@ -3,7 +3,7 @@
 Her findes registreringer af beslutninger truffet under udviklingen af Platformen.
 
 Forklaringer på hvorfor vi registrerer beslutninger og hvordan vi gør er
-her: [ADR-000](000-registrering-af-beslutninger.md)
+her: [ADR-001](000-registrering-af-beslutninger.md)
 
 ## Indhold
 
