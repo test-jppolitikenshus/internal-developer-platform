@@ -1,9 +1,9 @@
 # Internal Developer Platform Architecture Decisions
 
-Her findes registreringer af beslutninger truffet under udviklingen af Platformen.
+Her findes registreringer af beslutninger.
 
-Forklaringer på hvorfor vi registrerer beslutninger og hvordan vi gør er
-her: [ADR-001](000-registrering-af-beslutninger.md)
+Forklaringer på hvorfor vi registrerer beslutninger og hvordan vi gør: 
+[ADR-001](000-registrering-af-beslutninger.md)
 
 ## Indhold
 
