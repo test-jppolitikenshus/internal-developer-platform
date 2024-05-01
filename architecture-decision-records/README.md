@@ -35,7 +35,7 @@ her: [ADR-001](000-registrering-af-beslutninger.md)
 
 
 
-## Symbol beskrivelse
+## Status
 
 - ✅ Godkendt
 - ❌ Afvist
