@@ -1,4 +1,4 @@
-# Internal Developer Platform Architecture Decisions
+# Internal Developer Platform Design Beslutninger
 
 Her findes registreringer af beslutninger.
 
