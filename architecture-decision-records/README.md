@@ -11,27 +11,27 @@ Forklaringer på hvorfor vi registrerer beslutninger og hvordan vi gør:
 
 ## Identifikation af beslutninger
 
-1. 🤔  [Fælles ansvars model]
-1. 🤔  [Dokumentation]
-1. 🤔  [Azure Entre som identity provider]
-1. 🤔  [AWS som Cloud-First leverandør]
-1. 🤔  [Kubernetes som service provider] crossplane/ack
-1. 🤔  [EKS som managed kubernetes orkestrering]
-1. 🤔  [AWS multi-account strategi]
-1. 🤔  [EKS multi-cluster strategi]
-1. 🤔  [Infrastructure as code (IAC)]
-1. 🤔  [Kubernetes service mesh]
-1. 🤔  [Github som fælles repository provider]
-1. 🤔  [Fælles artifact repository]
-1. 🤔  [Github actions som CI/CD]
-1. 🤔  [Observability og notifikation]
-1. 🤔  [Persistent storage]
-1. 🤔  [Databaser]
-1. 🤔  [IDP ready checkliste]
-1. 🤔  [Adgang]
-1. 🤔  [GitOps]
-1. 🤔  [Portal]
-1. 🤔  [Sikkerhed]
+ [Fælles ansvars model]
+ [Dokumentation]
+ [Azure Entre som identity provider]
+ [AWS som Cloud-First leverandør]
+ [Kubernetes som service provider] crossplane/ack
+ [EKS som managed kubernetes orkestrering]
+ [AWS multi-account strategi]
+ [EKS multi-cluster strategi]
+ [Infrastructure as code (IAC)]
+ [Kubernetes service mesh]
+ [Github som fælles repository provider]
+ [Fælles artifact repository]
+ [Github actions som CI/CD]
+ [Observability og notifikation]
+ [Persistent storage]
+ [Databaser]
+ [IDP ready checkliste]
+ [Adgang]
+ [GitOps]
+ [Portal]
+ [Sikkerhed]
 
 
 
