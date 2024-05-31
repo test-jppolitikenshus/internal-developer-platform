@@ -41,4 +41,4 @@ Forklaring på hvorfor vi registrerer beslutninger og hvordan vi gør:
 - ❌ Afvist
 - 🤔 Forslag
 - ⌛️ Forældet
-- ♻️  Ændret
+- ♻️ Opdateret
