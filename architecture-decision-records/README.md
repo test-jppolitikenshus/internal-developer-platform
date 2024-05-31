@@ -2,7 +2,7 @@
 
 Her findes registrering af beslutninger.
 
-Forklaringer på hvorfor vi registrerer beslutninger og hvordan vi gør: 
+Forklaring på hvorfor vi registrerer beslutninger og hvordan vi gør: 
 [ADR-001](000-registrering-af-beslutninger.md)
 
 ## Indhold
