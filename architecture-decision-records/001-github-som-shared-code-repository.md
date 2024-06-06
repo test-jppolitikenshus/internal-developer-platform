@@ -52,17 +52,20 @@ Alternativ til enterprise cloud brugerstyring som beskrevet ovenfor, er enterpri
 *	Er typisk kun nødvendigt i banker eller andre hårdt regulerede butikker
 *	Vi mener enterprise management giver en usmidig oplevelse for de brugere, der allerede har en aktiv github handle - hvilket vil sige de fleste af vores udviklere. Samtidig udelukker det os fra samarbejder uden for koncernen, hvilket kan fungere usmidigt i forhold til eksterne samarbejdspartnere. 
 
-Alternativer til Github:
+Alternativer til Github:  
 AWS codecommit
 *	Integrerer med AWS services, primært IAM og S3, men platformen mangler det samme niveau af brugerfællesskab og tredjepartsintegrationer som GitHub.
 *	Man får ikke noget foræret ved at bruge codecommit frem for github i AWS 
 *	Vores AWS solution architects foretrækker github, og kalder det crem de la creme of repositories
-*	Bold bruger codecommit som de eneste i DUT. (4 brugere)
+*	Bold bruger codecommit som de eneste i DUT. (4 brugere)  
+
 Gitlab
-*	Selvom GitLab tilbyder omfattende CI/CD og DevOps værktøjer, er det mere komplekst og kan være overvældende at konfigurere – dette er ikke undersøgt nærmere.
+*	Selvom GitLab tilbyder omfattende CI/CD og DevOps værktøjer, er det mere komplekst og kan være overvældende at konfigurere – dette er ikke undersøgt nærmere.  
+
 Bitbucket		
 *	Holdet.dk bruger bitbucket som de eneste i DUT (3 brugere)
-*	God integration med Atlassian-værktøjer som Jira, men har en mindre brugervenlig grænseflade og et mindre aktivt samfund sammenlignet med GitHub.
+*	God integration med Atlassian-værktøjer som Jira, men har en mindre brugervenlig grænseflade og et mindre aktivt samfund sammenlignet med GitHub.  
+
 Azure Repos
 *	Vi bruger det ikke i dag
 *	Bedre egnet til teams der allerede bruger Azure
