@@ -17,9 +17,10 @@ Vi har brug for en pålidelig Git-platform til at hoste, versionere og samarbejd
 ## Beslutning
 
 Vi foretrækker github.com enterprise cloud model, hvor:
-* 	Entra som IdP m. MFA, hvor personlig github konto associeres med Entra bruger, og Entra skal bruges til at give adgang til repositories markeret som internal og private.
+* 	Entra fungerer som IdP m. MFA, hvor personlig github konto associeres med Entra bruger.
+*   Entra giver adgang til repositories markeret som internal og private.
 *	Eksisterende organisationer og teams kan blot flyttes til enterprise konto med eksisterende konfiguration/rettigheder
-*	Eksisterende enterprise server kan blive, eller migreres til cloud med Enterprise Importer
+*	Eksisterende enterprise server kan blive, eller migreres til cloud med Enterprise Importer uden ekstra kost
 *	Rettigheder kan potentielt nedarves fra Enterprise.
 *	Decentral administration kan ske på organisations niveau (eller repos niveau)
 *	Ny type repos, internal, der er åben for alle brugere under Enterprise konto
@@ -31,16 +32,16 @@ Vi foretrækker github.com enterprise cloud model, hvor:
 Yderligere fordele ved Github vs:
 *	95% af vores repositories ligger allerede i github universet
 *	Den største og mest kendte platform, betragtet som industri-standard
-*	Den største platform for open source, som udviklere får mulighed for at bidrage til.
+*	Den største platform for open source, som vores udviklere får mulighed for at bidrage til.
 *	Vi benytter allerede github actions CI/CD
 *	Flest integrationer tilgængelig
 *	Indeholder wiki, issue tracking, projekt styring
 
-
-
 ## Konsekvenser
 
 Vi vil få samlet alle vores repositories under en licens, og dermed potentielt spare licenser der i dag bruges på tværs af vores github organisationer.
+Sikkerheds validering i forbindelse med brugerhåndtering og repos konfiguration gøres tilgængelig, samt evt. brug af Infrastructure as code til konfiguration/validering.
+De identificerede organisationer der ikke bruger github idag bør flytte til github ved lejlighed.
 
 Alternativ til enterprise cloud brugerstyring som beskrevet ovenfor, er enterprise management users (dette ønsker vi at undgå):
 *	Brugere synkroniseres fra AD til Github med SCIM
@@ -52,17 +53,17 @@ Alternativ til enterprise cloud brugerstyring som beskrevet ovenfor, er enterpri
 *	Vi mener enterprise management giver en usmidig oplevelse for de brugere, der allerede har en aktiv github handle - hvilket vil sige de fleste af vores udviklere. Samtidig udelukker det os fra samarbejder uden for koncernen, hvilket kan fungere usmidigt i forhold til eksterne samarbejdspartnere. 
 
 Alternativer til Github:
--	AWS codecommit
+AWS codecommit
 *	Integrerer med AWS services, primært IAM og S3, men platformen mangler det samme niveau af brugerfællesskab og tredjepartsintegrationer som GitHub.
 *	Man får ikke noget foræret ved at bruge codecommit frem for github i AWS 
 *	Vores AWS solution architects foretrækker github, og kalder det crem de la creme of repositories
 *	Bold bruger codecommit som de eneste i DUT. (4 brugere)
--	Gitlab
+Gitlab
 *	Selvom GitLab tilbyder omfattende CI/CD og DevOps værktøjer, er det mere komplekst og kan være overvældende at konfigurere – dette er ikke undersøgt nærmere.
--	Bitbucket		
+Bitbucket		
 *	Holdet.dk bruger bitbucket som de eneste i DUT (3 brugere)
 *	God integration med Atlassian-værktøjer som Jira, men har en mindre brugervenlig grænseflade og et mindre aktivt samfund sammenlignet med GitHub.
--	Azure Repos
+Azure Repos
 *	Vi bruger det ikke i dag
 *	Bedre egnet til teams der allerede bruger Azure
 
