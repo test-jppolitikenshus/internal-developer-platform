@@ -17,17 +17,14 @@ Vi har brug for en pålidelig Git-platform til at hoste, versionere og samarbejd
 ## Beslutning
 
 Vi foretrækker github.com enterprise cloud model, hvor:
-* 	Entra fungerer som IdP m. MFA, hvor personlig github konto associeres med Entra bruger.
-*   Entra giver adgang til repositories markeret som internal og private.
-*	Eksisterende organisationer og teams kan blot flyttes til enterprise konto med eksisterende konfiguration/rettigheder
+* 	SSO via Entra 
+*	Eksisterende organisationer og teams kan flyttes til enterprise konto med eksisterende konfiguration/rettigheder
 *	Eksisterende enterprise server kan blive, eller migreres til cloud med Enterprise Importer uden ekstra kost
-*	Rettigheder kan potentielt nedarves fra Enterprise.
 *	Decentral administration kan ske på organisations niveau (eller repos niveau)
-*	Ny type repos, internal, der er åben for alle brugere under Enterprise konto
 *	Commit name er personlig github konto
 *	Github EMEA flytter hosting til sverige i efteråret
 *	50.000 CI/CD minutes/mdr pr bruger, hvorfor vi sansynligvis ikke behøver self-hosted runners.
-*	Adgang til Advanced Security Scanning, som kan forhindre at sensitive data bliver commitet, samt kode scanning – 49$ pr commiting user/month
+*	Adgang til Advanced Security Scanning, som kan forhindre at sensitive data bliver commitet, samt kode scanning
 
 Yderligere fordele ved Github vs:
 *	95% af vores repositories ligger allerede i github universet
@@ -42,6 +39,8 @@ Yderligere fordele ved Github vs:
 Vi vil få samlet alle vores repositories under en licens, og dermed potentielt spare licenser der i dag bruges på tværs af vores github organisationer.
 Sikkerheds validering i forbindelse med brugerhåndtering og repos konfiguration gøres tilgængelig, samt evt. brug af Infrastructure as code til konfiguration/validering.
 De identificerede organisationer der ikke bruger github idag bør flytte til github ved lejlighed.
+
+## Alternativer
 
 Alternativ til enterprise cloud brugerstyring som beskrevet ovenfor, er enterprise management users (dette ønsker vi at undgå):
 *	Brugere synkroniseres fra AD til Github med SCIM
