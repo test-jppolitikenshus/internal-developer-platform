@@ -1,0 +1,12 @@
+AWS Athena	Datastores	Adopt	NIL --> Adopt
+AWS DynamoDB 	Datastores	Hold	NIL --> Hold
+AWS OpenSearch 	Datastores	Hold	NIL --> Hold
+AWS Redis 	Datastores	Adopt	NIL --> Adopt
+AWS Redshift	Datastores	Hold	NIL --> Hold
+AWS S3 	Datastores	Adopt	NIL --> Adopt
+Hazelcast 	Datastores	Hold	NIL --> Hold
+MongoDB	Datastores	Hold	NIL --> Hold
+MySQL	Datastores	Hold	NIL --> Hold
+PostgreSQL	Datastores	Adopt	NIL --> Adopt
+Product	Quadrants	Ring	Move
+Solr	Datastores	Adopt	NIL --> Adopt

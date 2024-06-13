@@ -41,7 +41,7 @@
     // footer: "▲ moved up     ▼ moved down",
     // zoomed_quadrant: 0,
     //ENTRIES
-    entries: [{"label": "AWS Athena", "quadrant": 2, "quadrantName": "Datastores", "ring": 0, "ringName": "Adopt", "moved": 0, "active": true, "link": ""}, {"label": "AWS DynamoDB ", "quadrant": 2, "quadrantName": "Datastores", "ring": 2, "ringName": "Hold", "moved": 0, "active": true, "link": ""}, {"label": "AWS OpenSearch ", "quadrant": 2, "quadrantName": "Datastores", "ring": 2, "ringName": "Hold", "moved": 0, "active": true, "link": ""}, {"label": "AWS Redis ", "quadrant": 2, "quadrantName": "Datastores", "ring": 0, "ringName": "Adopt", "moved": 0, "active": true, "link": ""}, {"label": "AWS Redshift", "quadrant": 2, "quadrantName": "Datastores", "ring": 2, "ringName": "Hold", "moved": 0, "active": true, "link": ""}, {"label": "AWS S3 ", "quadrant": 2, "quadrantName": "Datastores", "ring": 0, "ringName": "Adopt", "moved": 0, "active": true, "link": ""}, {"label": "Hazelcast ", "quadrant": 2, "quadrantName": "Datastores", "ring": 2, "ringName": "Hold", "moved": 0, "active": true, "link": ""}, {"label": "MongoDB", "quadrant": 2, "quadrantName": "Datastores", "ring": 2, "ringName": "Hold", "moved": 0, "active": true, "link": ""}, {"label": "MySQL", "quadrant": 2, "quadrantName": "Datastores", "ring": 2, "ringName": "Hold", "moved": 0, "active": true, "link": ""}, {"label": "PostgreSQL", "quadrant": 2, "quadrantName": "Datastores", "ring": 0, "ringName": "Adopt", "moved": 0, "active": true, "link": ""}, {"label": "Solr", "quadrant": 2, "quadrantName": "Datastores", "ring": 0, "ringName": "Adopt", "moved": 0, "active": true, "link": ""}]
+    entries: {{ENTRIES}}
   });
   </script>
 
@@ -73,10 +73,9 @@
       <em>BTW, if you would like to create your own Tech Radar &mdash; Zalando have <a href="https://github.com/zalando/tech-radar">open sourced the code</a> to generate this visualization.</em>
       </p>
       <p>
-        This radar was last updated 6/2024
+        This radar was last updated {{DATE}}
 	  </p>
     </div>
   </div>
 </body>
 </html>
-
