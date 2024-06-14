@@ -7,7 +7,8 @@ import datetime
 
 
 # The known quadrants in the order they have in the HTLM template
-quadrants = ['Languages', 'Infrastructure', 'Datastores', 'Frameworks']
+#quadrants = ['Languages', 'Infrastructure', 'Datastores', 'Frameworks']
+quadrants = ['Languages', 'Infrastructure', 'Datastores', 'Techniques']
 
 # The known rings in the order they have in the HTLM template
 rings = ['Adopt', 'Trial', 'Hold']
