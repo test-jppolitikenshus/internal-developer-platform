@@ -1,6 +1,6 @@
 # Internal Developer Platform Design Beslutninger
 
-Her findes registrering af beslutninger.
+Her findes registrering af beslutninger, sådan som [Michael Nygaard](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions) beskriver det.
 
 Forklaring på hvorfor vi registrerer beslutninger og hvordan vi gør: 
 [ADR-001](000-registrering-af-beslutninger.md)
