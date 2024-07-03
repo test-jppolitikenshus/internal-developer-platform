@@ -67,7 +67,7 @@ Brug Kubernetes som containeradministration og samtidig fundament for vores udvi
 
 Kubernetes er således en mere omfattende og fleksibel løsning til vores projekt.
 
-Kubernetes understøtter voers ideal beskrevet i (roadmap[https://blabla.asdf]) hvor hurtig onboarding og fokus på developer experience er central, ved at stille et så komplet som muligt udviklingsmiljø til rådighed for udviklerne.
+Kubernetes understøtter samtidig voers ideal beskrevet i (roadmap[https://test-jppolitikenshus.github.com/internal-developer-platform/roadmap]) hvor hurtig onboarding og fokus på developer experience er central, ved at stille et så komplet som muligt udviklingsmiljø til rådighed for udviklerne.
 
 ## Konsekvenser
 
