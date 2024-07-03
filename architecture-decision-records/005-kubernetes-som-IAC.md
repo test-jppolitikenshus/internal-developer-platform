@@ -13,8 +13,7 @@ Forslag
 ## Kontekst
 
 - crossplane
-- Backstack.dev
-- Cnoe.io
-- Kratix.io
-- Otomi.io
-- Rig.dev
+- kubernetes operators
+- terraform
+- CDK
+- pulumi

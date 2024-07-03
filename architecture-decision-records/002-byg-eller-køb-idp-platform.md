@@ -4,3 +4,4 @@ kratix.io
 cnoe.io
 backstack.dev
 cycloid.io
+quory.io
