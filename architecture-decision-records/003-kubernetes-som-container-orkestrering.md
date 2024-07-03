@@ -6,6 +6,10 @@
 
 ---
 
+## Status
+
+Forslag
+
 ## Kontekst
 
 Vores tilgang til administration og ejerskab af infrastruktur i DUT, herunder EB, JP, Politiken, Bold, Holdet samt Koncernens fællesfunktioner, har udviklet sig over tid og ført til følgende:
@@ -47,40 +51,32 @@ Der er også præcedens for brug af ECS inden for DUT, da JP og koncernen har by
 
 ## Beslutning
 
-Brug Kubernetes som containeradministration og samtidig fundament for vores udviklings platform.
+Brug Kubernetes som containeradministration og samtidig fundament for vores udviklings platform. Læg særligt vægt på at:
+
+1. Fleksibilitet og Portabilitet: Kubernetes kan køre på enhver cloud eller lokal infrastruktur og undgår leverandørbinding.
+
+2.Avancerede skaleringsmuligheder: Kubernetes kan skalere automatisk baseret på ressourceudnyttelse og håndterer høje trafikbelastninger effektivt.
+
+3. Stærkt Økosystem: Kubernetes har et meget stort community og et rigt udvalg af værktøjer og services, og forventes at kunne tiltrække kandidater i højere grad.
+
+4. Moden Arkitektur: Kubernetes tilbyder self-healing, automatiserede deployments og rollbacks samt dynamisk konfigurationsstyring.
+
+5. CI/CD Integration: Kubernetes integreres problemfrit med CI/CD pipelines for mere effektive udviklingsforløb.
+
+6. Multi-Cluster Management: Kubernetes understøtter multi-cluster management for høj tilgængelighed og katastrofeberedskab.
+
+Kubernetes er således en mere omfattende og fleksibel løsning til vores projekt.
+
+Kubernetes understøtter voers ideal beskrevet i (roadmap[https://blabla.asdf]) hvor hurtig onboarding og fokus på developer experience er central, ved at stille et så komplet som muligt udviklingsmiljø til rådighed for udviklerne.
 
 ## Konsekvenser
 
 1. Flere tekniske udfordringer med kubernetes selv og tilhørende komponenter i en multi-tenant struktur, herunder logging, overvågning, deployment, omkostningsstyring, namespace isolering.
+
 2. Vi har ikke pt folk nok med med erfaring i Kubernetes og IDP, og der vil være en stejl læringskurve for at opbygge og drifte platformen.
+
 3. Krav om at bruge en identitetsbroker til Kubernetes, OIDC direkte i EKS eller via identity center givet beslutningen om at bruge Azure Entra om identitetsudbyder.
 
-## Status
-
-Forslag
-
-Det understøtter voers ideal beskrevet i (roadmap[https://blabla.asdf]) har vi en målsæt
+4. ECS control planes koster ikke noget, EKS koster 500 DKK / mdr pr cluster.
 
 ## Alternativer
-
-ECS control planes koster ikke noget.
-EKS er opensource (portable)
-Både ECS og EKS har fargate (server & clusterless)
-EKS er har mere avanceret skalerings muligheder
-EKS may be preferred for complex ML pipelines, benefiting from the Kubernetes ecosystem and tools like Kubeflow for enhanced orchestration, scalability, and community support.
-
-When selecting a container orchestration platform for our project, we recommend using Kubernetes over Amazon Elastic Container Service (ECS) due to several key advantages:
-
-1. **Flexibility and Portability**: Kubernetes is an open-source platform that can run on any cloud provider or on-premises infrastructure. This offers greater flexibility and avoids vendor lock-in compared to ECS, which is tightly integrated with AWS.
-
-2. **Advanced Scheduling and Scalability**: Kubernetes provides advanced scheduling capabilities and can automatically scale applications based on resource utilization and other metrics. This ensures efficient resource usage and can handle high traffic loads effectively.
-
-3. **Extensive Ecosystem and Community Support**: Kubernetes has a large and active community, which continuously contributes to its development and provides extensive support and resources. This results in a rich ecosystem of tools, plugins, and services that can enhance our deployment and management capabilities.
-
-4. **Robust and Mature Architecture**: Kubernetes has a mature architecture with many built-in features for managing complex application deployments. It includes features like self-healing, automated rollouts and rollbacks, and dynamic configuration management, which are essential for maintaining high availability and reliability.
-
-5. **Integration with CI/CD Pipelines**: Kubernetes integrates seamlessly with Continuous Integration and Continuous Delivery (CI/CD) pipelines, facilitating more efficient development workflows and faster deployment cycles.
-
-6. **Multi-Cluster Management**: Kubernetes supports multi-cluster management, which is beneficial for running applications across multiple environments and regions. It helps in achieving high availability and disaster recovery goals.
-
-In conclusion, Kubernetes offers a comprehensive and flexible solution for container orchestration, making it a more suitable choice for our project compared to ECS.
