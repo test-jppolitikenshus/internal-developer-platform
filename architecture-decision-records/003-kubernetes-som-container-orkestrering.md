@@ -80,3 +80,5 @@ Kubernetes understøtter samtidig voers ideal beskrevet i (roadmap[https://test-
 4. ECS control planes koster ikke noget, EKS koster 500 DKK / mdr pr cluster.
 
 ## Alternativer
+
+Ingen nævnt
