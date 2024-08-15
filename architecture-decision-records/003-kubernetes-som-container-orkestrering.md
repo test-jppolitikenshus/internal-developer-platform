@@ -55,7 +55,7 @@ Brug Kubernetes som containeradministration og samtidig fundament for vores udvi
 
 1. Fleksibilitet og Portabilitet: Kubernetes kan køre på enhver cloud eller lokal infrastruktur og undgår leverandørbinding.
 
-2.Avancerede skaleringsmuligheder: Kubernetes kan skalere automatisk baseret på ressourceudnyttelse og håndterer høje trafikbelastninger effektivt.
+2. Avancerede skaleringsmuligheder: Kubernetes kan skalere automatisk baseret på ressourceudnyttelse og håndterer høje trafikbelastninger effektivt.
 
 3. Stærkt Økosystem: Kubernetes har et meget stort community og et rigt udvalg af værktøjer og services, og forventes at kunne tiltrække kandidater i højere grad.
 
@@ -67,7 +67,7 @@ Brug Kubernetes som containeradministration og samtidig fundament for vores udvi
 
 Kubernetes er således en mere omfattende og fleksibel løsning til vores projekt.
 
-Kubernetes understøtter samtidig voers ideal beskrevet i (roadmap[https://test-jppolitikenshus.github.com/internal-developer-platform/roadmap]) hvor hurtig onboarding og fokus på developer experience er central, ved at stille et så komplet som muligt udviklingsmiljø til rådighed for udviklerne.
+Kubernetes understøtter samtidig voers ideal beskrevet i vores [Manifest](https://github.com/test-jppolitikenshus/internal-developer-platform/wiki/Manifest) hvor hurtig onboarding og fokus på developer experience er central, ved at stille et så komplet som muligt udviklingsmiljø til rådighed for udviklerne.
 
 ## Konsekvenser
 
