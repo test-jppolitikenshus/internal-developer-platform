@@ -5,6 +5,8 @@ Her findes registrering af beslutninger, sådan som [Michael Nygaard](https://ww
 Forklaring på hvorfor vi registrerer beslutninger og hvordan vi gør: 
 [ADR-001](000-registrering-af-beslutninger.md)
 
+Læs her hvis du vil oprette en ADR: [ADR dokumentation](https://github.com/test-jppolitikenshus/internal-developer-platform/wiki/Architect-Decision-Records)
+
 ## Indhold
 
 1. 🤔  [Registrering af beslutninger](000-registrering-af-beslutninger.md)
