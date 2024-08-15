@@ -46,7 +46,7 @@ Fra ovenstående liste af produkter er Kubernetes den klare markedsleder og unde
 - Øget støtte til Kubernetes som implementeringsmål for kommercielle og open-source softwareprojekter
 - Kubernetes er en populær teknologi, mange udviklere har erfaring med det, hvilket er vigtigt ifbm ekruttering og fastholdelse
 
-Der er præcedens for brug af Kubernetes inden for DUT, da AI og EB teams har bygget deres platforme på Kubernetes
+Der er præcedens for brug af Kubernetes inden for DUT, da AI og EB teams har bygget deres platforme på Kubernetes.   
 Der er også præcedens for brug af ECS inden for DUT, da JP og koncernen har bygget deres platforme på ECS.
 
 ## Beslutning
