@@ -16,7 +16,6 @@ Hvis du vil oprette en ADR: [ADR dokumentation](https://github.com/test-jppoliti
 5. 🤔  [Infrastructure as code](005-kubernetes-som-IAC.md)
 6. 🤔  [Support og kommunikation](006-support-og-kommunikation.md)
 
-
 ## Identifikation af beslutninger, fx
 
 - [Fælles ansvars model]
@@ -26,7 +25,6 @@ Hvis du vil oprette en ADR: [ADR dokumentation](https://github.com/test-jppoliti
 - [Kubernetes som service provider] crossplane/ack
 - [EKS som managed kubernetes orkestrering]
 - [AWS multi-account strategi]
-
 - [Kubernetes service mesh]
 - [Github som fælles repository provider]
 - [Fælles artifact repository]
