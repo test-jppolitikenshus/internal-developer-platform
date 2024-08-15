@@ -2,7 +2,9 @@
 
 Dette er vores Architecture Decisions log, sådan som [Michael Nygaard](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions) beskriver det.
 
-Hvorfor vi registrerer beslutninger og hvordan vi gør (eller du gør): [ADR dokumentation](https://github.com/test-jppolitikenshus/internal-developer-platform/wiki/Architect-Decision-Records)
+Forklaring på hvorfor vi registrerer beslutninger og hvordan vi gør: [ADR-000](000-registrering-af-beslutninger.md)
+
+Hvis du vil oprette en ADR: [ADR dokumentation](https://github.com/test-jppolitikenshus/internal-developer-platform/wiki/Architect-Decision-Records)
 
 ## Indhold
 
