@@ -8,12 +8,16 @@ Hvis du vil oprette en ADR: [ADR dokumentation](https://github.com/test-jppoliti
 
 ## Indhold
 
-1. 🤔  [Registrering af beslutninger](000-registrering-af-beslutninger.md)
-2. 🤔  [Github som fælles kode repository](001-github-som-shared-code-repository.md)
-3. 🤔  [Kubernetes som container orkestrering](002-kubernetes-som-container-orkestrering.md)
-4. 🤔  [
+0. 🤔  [Registrering af beslutninger](000-registrering-af-beslutninger.md)
+1. 🤔  [Github som fælles kode repository](001-github-som-shared-code-repository.md)
+2. 🤔  [Byg eller køb IDP produkt](002-byg-eller-køb-idp-platform.md)
+3. 🤔  [Kubernetes som container orkestrering](003-kubernetes-som-container-orkestrering.md)
+4. 🤔  [Kubernetes multi-cluster vs multitenant strategi](004-multicluster-vs-multitenancy.md)
+5. 🤔  [Infrastructure as code](005-kubernetes-som-IAC.md)
+6. 🤔  [Support og kommunikation](006-support-og-kommunikation.md)
 
-## Identifikation af beslutninger
+
+## Identifikation af beslutninger, fx
 
 - [Fælles ansvars model]
 - [Dokumentation]
@@ -22,8 +26,7 @@ Hvis du vil oprette en ADR: [ADR dokumentation](https://github.com/test-jppoliti
 - [Kubernetes som service provider] crossplane/ack
 - [EKS som managed kubernetes orkestrering]
 - [AWS multi-account strategi]
-- [EKS multi-cluster strategi]
-- [Infrastructure as code (IAC)]
+
 - [Kubernetes service mesh]
 - [Github som fælles repository provider]
 - [Fælles artifact repository]
