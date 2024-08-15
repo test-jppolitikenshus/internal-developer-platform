@@ -3,13 +3,16 @@
 Her findes registrering af beslutninger, sådan som [Michael Nygaard](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions) beskriver det.
 
 Forklaring på hvorfor vi registrerer beslutninger og hvordan vi gør: 
-[ADR-001](000-registrering-af-beslutninger.md)
+[ADR-000](000-registrering-af-beslutninger.md)
 
 Læs her hvis du vil oprette en ADR: [ADR dokumentation](https://github.com/test-jppolitikenshus/internal-developer-platform/wiki/Architect-Decision-Records)
 
 ## Indhold
 
 1. 🤔  [Registrering af beslutninger](000-registrering-af-beslutninger.md)
+2. 🤔  [Github som fælles kode repository](001-github-som-shared-code-repository.md)
+3. 🤔  [Kubernetes som container orkestrering](002-kubernetes-som-container-orkestrering.md)
+4. 🤔  [
 
 ## Identifikation af beslutninger
 
