@@ -12,18 +12,60 @@ Forslag
 
 ## Kontekst
 
-- crossplane
-- ack
-- kubernetes operators
-- terraform
-- CDK
-- pulumi
+Vi skal vælge, om vi ønsker at implementere Infrastructure as Code (IaC) ved brug af Kubernetes-native løsninger eller tradionelle værktøjer. Dette valg vil påvirke vores deployment-strategi, automation, og driftseffektivitet. Følgende produkter/teknologier er relevante i denne kontekst:
 
-crossplane vs terraform:
-Automatic syncing – The tool automatically keeps the desired and manyactual state of your resources in sync. If there's a drift from the desired state, the system can automatically apply changes to reconcile the state.
-Self-healing capabilities – Kubernetes has built-in mechanisms to detect and rectify failures. If a resource managed by the tool fails or becomes unhealthy, Kubernetes can automatically attempt to heal the system by restarting containers, re-scheduling workloads, or scaling resources.
-Declarative configuration - Similar to Terraform, you define your infrastructure as code in a declarative manner. However, by leveraging Kubernetes, you gain the advantage of integrating more seamlessly with Kubernetes resources and services.
-Scalability - Leveraging Kubernetes means you can easily scale your resources up or down based on demand. Kubernetes' control plane automates the distribution and scheduling of workloads across a cluster, optimizing resource utilization.
-Community and ecosystem - By aligning with Kubernetes, you tap into a large and active community. This comes with many plugins, tools, and extensions that can enhance and simplify managing your infrastructure.
-Security features - Kubernetes offers several built-in security features, such as role-based access control (RBAC), network policies, and Secrets management. These features can be leveraged to secure the infrastructure managed by the tool.
-Multi-cloud and hybrid-cloud support - Kubernetes is designed to run across various environments, including on-premises, public clouds, and hybrid clouds. This flexibility allows for consistent management of resources regardless of their location.
+- **Crossplane**: Kubernetes-native IAC.
+- **AWS Controllers for Kubernetes (ACK)**: Kubernetes-native tilgang til at administrere AWS-ressourcer.
+- **Kubernetes Operators**: Skræddersyede controllers til at automatisere styring af applikations-specifikke ressourcer.
+- **Terraform**: Populært, agnostisk IAC-værktøj, der også understøtter Kubernetes.
+- **AWS Cloud Development Kit (CDK)**: IAC framework for at definere cloud resources vha. programmerings-sprog.
+- **Pulumi**: IAC-værktøj, der bruger almindelige programmeringssprog og kan understøtte Kubernetes.
+
+## Konklusion af Crossplane vs Terraform
+
+### Fordele ved Crossplane
+1. **Automatic syncing**:
+   - Automatisk synkronisering af ønsket og aktuelt state. Ved driftsafvigelse, kan systemet automatisk anvende ændringer for at genoprette tilstanden.
+
+2. **Self-healing capabilities**:
+   - Indbyggede selvhelbredende mekanismer i Kubernetes, der kan detektere og rette fejl ved at genstarte container, replanlægge workloads eller skalere ressourcer.
+
+3. **Declarative configuration**:
+   - Infrastruktur defineres deklarativt. Integreres problemfrit med Kubernetes ressourcer og tjenester.
+
+4. **Skalérbarhed**:
+   - Nem skalering af ressourcer baseret på efterspørgsel. Kubernetes automationsplan distribuerer og planlægger workloads optimeret.
+
+5. **Community and ecosystem**:
+   - Stort og aktiv community. Talrige plugins, værktøjer og udvidelser.
+
+6. **Sikkerhedsfunktioner**:
+   - Rollebaseret adgangskontrol (RBAC), netværkspolitikker og Secret management understøttelse.
+
+7. **Multi-cloud og hybrid-cloud support**:
+   - Designet til at køre på tværs af on-premises, offentlige clouds og hybrid clouds. Konsistent ressourcehåndtering uanset lokation.
+
+### Fordele ved Terraform
+1. **Platform agnostic**:
+   - Understøtter flere cloud-udbydere og ressourcetyper, ikke blot Kubernetes-specifik.
+
+2. **Modenhed**:
+   - Velafprøvet teknologi med mange anvendelsestilfælde og best practices.
+
+3. **State management**:
+   - Centraliseret state management, hvilket gør det lettere at håndtere komplekse infrastructures.
+
+4. **Skabeloner**:
+   - Et bredt udvalg af skabeloner og moduler for hurtig opsætning.
+
+## Beslutning
+
+(Detaljer om den endelige beslutning, når denne er truffet)
+
+## Alternativer
+
+1. **ACK og Operators**:
+   - Brugen af AWS Controllers for Kubernetes (ACK) og Kubernetes Operators som alternative tilgange for IAC med tæt integration til Kubernetes.
+
+2. **CDK og Pulumi**:
+   - Brug af AWS Cloud Development Kit (CDK) og Pulumi som mere programmeringsvenlige IAC-muligheder.
