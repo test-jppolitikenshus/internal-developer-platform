@@ -62,6 +62,7 @@ Alternativer til Github:
 - Man får ikke noget foræret ved at bruge codecommit frem for github i AWS
 - Vores AWS solution architects foretrækker github, og kalder det crem de la creme of repositories
 - Bold bruger codecommit som de eneste i DUT. (4 brugere)
+- Codecommit er markeret som end-of-life pr. juli 2024.
 
 **Gitlab**
 
