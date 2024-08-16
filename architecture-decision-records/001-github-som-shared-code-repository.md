@@ -22,7 +22,7 @@ Vi foretrækker github.com enterprise cloud model, hvor:
 - Eksisterende organisationer og teams kan flyttes til enterprise konto med eksisterende konfiguration/rettigheder
 - Eksisterende enterprise server kan blive, eller migreres til cloud med Enterprise Importer uden ekstra kost
 - Decentral administration kan ske på organisations niveau (eller repos niveau)
-- Commit name er personlig github konto
+- Commit name er personlig github konto, som er godt ifølge [Michael](https://www.michaelnygard.com/blog/2015/04/people-dont-belong-to-organizations/)
 - Github EMEA flytter hosting til sverige i efteråret
 - 50.000 CI/CD minutes/mdr + brugerens egne 2000 min, hvorfor vi sansynligvis ikke behøver self-hosted runners.
 - Adgang til Advanced Security Scanning, som kan forhindre at sensitive data bliver commitet, samt kode scanning
@@ -41,6 +41,11 @@ Yderligere fordele ved Github vs:
 Vi vil få samlet alle vores repositories under en licens, og dermed potentielt spare licenser der i dag bruges på tværs af vores github organisationer.
 Sikkerheds validering i forbindelse med brugerhåndtering og repos konfiguration gøres tilgængelig, samt evt. brug af Infrastructure as code til konfiguration/validering.
 De identificerede organisationer der ikke bruger github idag bør flytte til github ved lejlighed.
+
+Vi skal finde ud af, hvordan vi sikrer, at secrets og sensitive parametre beskyttes særligt i offentligt tilgængelig repositories, og på unmanaged CI/CD runners. 
+
+Vi bør overveje at implementere tiltag der mitigerer krav om VPN og/eller ip baseret pull request protection, ved at  behandle alle pull requests og repositries som usikre og teste koden i overenstemmelse hermed.
+
 
 ## Alternativer
 
