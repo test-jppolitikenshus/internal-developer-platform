@@ -65,6 +65,17 @@ Efter at have vurderet fordele og ulemper ved Crossplane og Terraform, anbefaler
 2. **Selvhelbredende egenskaber**: Giver os mulighed for at opretholde driftstiden og sikkerheden gennem selvhelbredende mekanismer.
 3. **Deklarativ konfiguration**: Muliggør en mere konsistent og forståelig konfigurationsstyring.
 
+Dette valg understøtter vores målsætning om at implementere et GitOps baseret workflow, der er let tilgængeligt via GitHub. Fordelene ved denne tilgang inkluderer:
+
+1. **Automatisk deployment**:
+   - Automatisere deployment-processer ved at synkronisere Git repositories med vores Kubernetes clusters. Dette sikrer, at enhver ændring i vores Git repository automatisk afspejles i vores Cluster.
+
+2. **Audit og versioning**:
+   - Bevare revisionshistorik og versionering af vores infrastrukturkode, hvilket øger sporbarhed og ansvarlighed. Hver ændring kan spores tilbage til et bestemt commit, og tidligere versioner kan nemt gendannes.
+
+3. **Samarbejde**:
+   - Understøtte samarbejde blandt udviklere og operations teams ved at bruge GitHub som en central hub for code reviews og issue tracking. Dette fremmer en fælles forståelse og ansvar for infrastrukturændringer.
+
 ## Alternativer
 
 1. **ACK og Operators**:
