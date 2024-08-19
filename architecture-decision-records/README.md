@@ -30,6 +30,7 @@ Hvis du vil oprette en ADR: [ADR dokumentation](https://github.com/test-jppoliti
 - [GitOps]
 - [Portal]
 - [Sikkerhed]
+- [Business Continuity]
 
 
 
