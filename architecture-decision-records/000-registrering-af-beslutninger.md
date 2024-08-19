@@ -18,7 +18,8 @@ Samtidig kan disse dokumenter fungere som reference dokumentation for nye team m
 
 ## Beslutning
 
-Vi kan fx bruge Architecture Decision Records, som beskrevet af Michael Nygaard i artiklen [Documenting architecture decisions](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
+Vi vil bruge Architecture Decision Records, som beskrevet af Michael Nygaard i artiklen [Documenting architecture decisions](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions)   
+Dokumentation af vores ADR process i [wikien](https://github.com/test-jppolitikenshus/internal-developer-platform/wiki/Architect-Decision-Records)
 
 ## Konsekvenser
 
@@ -29,3 +30,4 @@ Vi kan fx bruge Architecture Decision Records, som beskrevet af Michael Nygaard 
 1. Motivationen bag tidligere beslutninger er synlig for alle, nu og i fremtiden.
 1. Når gamle beslutninger ændres vil ændringerne fremgå i platformens kontekst, også selvom team struktur og organisation ændrer sig over tid.
 1. Det letter kommunikationen på tværs af teams ved at give en klar forklaring på, hvorfor bestemte beslutninger blev truffet.
+
