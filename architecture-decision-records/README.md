@@ -18,6 +18,7 @@ Hvis du vil oprette en ADR: [ADR dokumentation](https://github.com/test-jppoliti
 
 ## Kommende ADRs:
 
+- [Dokumentation]
 - [Fælles ansvars model]
 - [AWS multi-account strategi]
 - [Kubernetes service mesh]
