@@ -1,8 +1,8 @@
 ### Architecture Decision Record (ADR)
 
-#### Title: 002 Valg af container orkestrerings produkt
+#### Title: 006 Valg af container orkestrerings produkt
 
-#### Date: 2024-06-03
+#### Date: 2024-08-19
 
 ---
 
@@ -80,6 +80,8 @@ Kubernetes understøtter samtidig voers ideal beskrevet i vores [Manifest](https
 3. Krav om at bruge en identitetsbroker til Kubernetes, OIDC direkte i EKS eller via identity center givet beslutningen om at bruge Azure Entra om identitetsudbyder.
 
 4. ECS control planes koster ikke noget, EKS koster 500 DKK / mdr pr cluster.
+
+5. Prioritering af container teknologi frem for serverless: Vi har, og fortsat får, meget udvikling i containere, men mangler ensretning/stordriftsfordele. Vi afviser ikke serverless, men ser containere som et passende aktuelt fokuspunkt.
 
 ## Alternativer
 
