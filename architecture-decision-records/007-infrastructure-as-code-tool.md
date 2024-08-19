@@ -21,6 +21,8 @@ Vi skal vælge, om vi ønsker at implementere Infrastructure as Code (IaC) ved b
 - **AWS Cloud Development Kit (CDK)**: IAC framework for at definere cloud resources vha. programmerings-sprog.
 - **Pulumi**: IAC-værktøj, der bruger almindelige programmeringssprog og kan understøtte Kubernetes.
 
+Vendor agnostiske produkter er Crossplane, Terraform og Pulumi - Pulumi er der så vidt vides ingen erfaring med i huset.
+
 ## Konklusion af Crossplane vs Terraform
 
 ### Fordele ved Crossplane
@@ -46,26 +48,43 @@ Vi skal vælge, om vi ønsker at implementere Infrastructure as Code (IaC) ved b
    - Designet til at køre på tværs af on-premises, offentlige clouds og hybrid clouds. Konsistent ressourcehåndtering uanset lokation.
 
 ### Fordele ved Terraform
-1. **Platform agnostic**:
-   - Understøtter flere cloud-udbydere og ressourcetyper, ikke blot Kubernetes-specifik.
+1. **Modenhed**:
+   - Velafprøvet teknologi med mange anvendelsesmuligheder og best practices.
 
-2. **Modenhed**:
-   - Velafprøvet teknologi med mange anvendelsestilfælde og best practices.
-
-3. **State management**:
+2. **State management**:
    - Centraliseret state management, hvilket gør det lettere at håndtere komplekse infrastructures.
 
-4. **Skabeloner**:
+4. **Templates**:
    - Et bredt udvalg af skabeloner og moduler for hurtig opsætning.
 
 ## Beslutning
 
-(Detaljer om den endelige beslutning, når denne er truffet)
+Efter at have vurderet fordele og ulemper ved Crossplane og Terraform, anbefaler vi at gå videre med **Crossplane** som vores primære IaC værktøj. Denne anbefaling er baseret på følgende årsager:
+
+1. **Kubernetes-integration**: Crossplane er dybt integreret med Kubernetes-økosystemet, hvilket muliggør seamless infra management.
+2. **Selvhelbredende egenskaber**: Giver os mulighed for at opretholde driftstiden og sikkerheden gennem selvhelbredende mekanismer.
+3. **Deklarativ konfiguration**: Muliggør en mere konsistent og forståelig konfigurationsstyring.
 
 ## Alternativer
 
 1. **ACK og Operators**:
    - Brugen af AWS Controllers for Kubernetes (ACK) og Kubernetes Operators som alternative tilgange for IAC med tæt integration til Kubernetes.
 
+   Fordele:
+   - Tæt integration med AWS-økosystemet.
+   - Skræddersyet til specifikke applikationer og underliggende infrastruktur.
+
+   Ulemper:
+   - Mindre fleksibilitet på tværs af forskellige cloududbydere og platforme.
+   - Højere kompleksitet ved opsætning og vedligeholdelse.
+
 2. **CDK og Pulumi**:
    - Brug af AWS Cloud Development Kit (CDK) og Pulumi som mere programmeringsvenlige IAC-muligheder.
+
+   Fordele:
+   - Programmeringsvenlig, understøtter flere almindelige sprog.
+   - Understøtter bredere sæt af ressourcer og integrerer også godt med CI/CD pipelines.
+
+   Ulemper:
+   - Mindre standardiseret approach sammenlignet med deklarative løsninger.
+   - Potentielt højere læringskurve for udviklerne.
