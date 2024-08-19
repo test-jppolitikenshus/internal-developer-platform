@@ -1,6 +1,6 @@
 ### Architecture Decision Record (ADR)
 
-#### Title: 002 kubernetes som container orkestrering
+#### Title: 002 Valg af container orkestrerings produkt
 
 #### Date: 2024-06-03
 
@@ -36,7 +36,7 @@ Der eksisterer flere produkter, der specifikt fokuserer på at køre og administ
 - Hashicorp Nomad (apparently dead)
 - Apache Mesos (mere kompleks end Kubernetes, og ikke så populær)
 
-Givet teknologilandskabet inden for DUT, ønsker vi en containeradministrationsplatform, der på sigt kan understøtte en bred vifte af applikationer, fra "moderne" cloud-native [12-faktor applikationer](https://12factor.net) til "legacy" stateful monolitiske applikationer, potentielt omfattende både Linux- og Windows-baserede applikationer.
+Givet det nuværende teknologilandskab inden for DUT, ønsker vi en containeradministrationsplatform, der på sigt kan understøtte en bred vifte af applikationer, fra "moderne" cloud-native [12-faktor applikationer](https://12factor.net) til "legacy" stateful monolitiske applikationer, potentielt omfattende både Linux- og Windows-baserede applikationer.
 
 Fra ovenstående liste af produkter er Kubernetes den klare markedsleder og understøtter både applikationer og infrastrukturbehov. Kubernetes har følgende fordele:
 
@@ -65,6 +65,8 @@ Brug Kubernetes som containeradministration og samtidig fundament for vores udvi
 
 6. Multi-Cluster Management: Kubernetes understøtter multi-cluster management for høj tilgængelighed og katastrofeberedskab.
 
+7. IAC-platform: Mulighed for at bruge kubernetes som infrastructure as code platform, og dermed opnå mulighed for cloud agnostisk gitops infrastruktur.
+
 Kubernetes er således en mere omfattende og fleksibel løsning til vores projekt.
 
 Kubernetes understøtter samtidig voers ideal beskrevet i vores [Manifest](https://github.com/test-jppolitikenshus/internal-developer-platform/wiki/Manifest) hvor hurtig onboarding og fokus på developer experience er central, ved at stille et så komplet som muligt udviklingsmiljø til rådighed for udviklerne.
@@ -81,4 +83,48 @@ Kubernetes understøtter samtidig voers ideal beskrevet i vores [Manifest](https
 
 ## Alternativer
 
-Ingen nævnt
+### AWS ECS (Elastic Container Service)
+
+- **Fordele**:
+  - Kan nemt integreres med andre AWS-tjenester såsom ALB, API Gateway, Security Groups, NACLs osv.
+  - Ingen separate control plane omkostninger som ved EKS.
+  - Lettere at administrere for rene applikationscontainer-skaleringer.
+
+- **Ulemper**:
+  - Mindre støttet i det bredere økosystem af værktøjer og teknologier sammenlignet med Kubernetes.
+  - Begrænset til AWS, hvilket reducerer platformens agnostiske karakter.
+  - Mangler avancerede funktioner, som Kubernetes-operatører og multi-cluster management.
+  - Utilstrækkelig for drift af mere eksotisk software via operators.
+
+### Docker Swarm
+
+- **Fordele**:
+  - Indbygget i Docker, nem at sætte op og administrere.
+  - God for simple container-koordineringsbehov.
+
+- **Ulemper**:
+  - Mangler mange af de avancerede funktioner og skaleringsmuligheder, som Kubernetes tilbyder.
+  - Mindre community og økosystem sammenlignet med Kubernetes.
+  - Ikke velegnet for komplekse og skalerbare produktionsmiljøer.
+
+### On-Premises Løsning
+
+- **Fordele**:
+  - Fuldstændig kontrol over hardwaren og softwaremiljøet.
+  - Kan være økonomisk fordelagtigt ved meget store workloads.
+
+- **Ulemper**:
+  - Højere kapitalomkostninger og driftsomkostninger.
+  - Reduceret skalerbarhed og fleksibilitet sammenlignet med cloud-løsninger.
+  - Kræver dedikerede ressourcer til vedligeholdelse og administration.
+
+### CloudFoundry PaaS
+
+- **Fordele**:
+  - Kører på toppen af Kubernetes og bringer PaaS funktionaliteter.
+  - God til udviklerproduktivitet og hurtig applikationsudrulning.
+
+- **Ulemper**:
+  - Komplekst at administrere i store skalaer.
+  - Mindre fleksibilitet i forhold til Kubernetes for specifikke tilpassede behov.
+
