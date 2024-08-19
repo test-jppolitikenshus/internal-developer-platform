@@ -16,7 +16,7 @@ Hvis du vil oprette en ADR: [ADR dokumentation](https://github.com/test-jppoliti
 5. 🤔  [Infrastructure as code](005-kubernetes-som-IAC.md)
 6. 🤔  [Support og kommunikation](006-support-og-kommunikation.md)
 
-## Identifikation af beslutninger, fx
+## Kommende ADRs:
 
 - [Fælles ansvars model]
 - [AWS multi-account strategi]
