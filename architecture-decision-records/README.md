@@ -10,7 +10,7 @@ Hvis du vil oprette en ADR: [ADR dokumentation](https://github.com/test-jppoliti
 
 0. 🤔  [Regstrering af beslutninger](000-registrering-af-beslutninger.md)
 0. 🤔  [Identity Provider](001-identity-provider.md)
-0. 🤔  [Primær cloud vendor](002-primary-cloud-vendor.md)
+0. 🤔  [Foretrukken cloud leverandør](002-primary-cloud-vendor.md)
 0. 🤔  [Valg af cloud partner](003-cloud-partner.md)
 0. 🤔  [Fælles kode repository](004-shared-code-repository.md)
 0. 🤔  [Byg eller køb IDP produkt](005-byg-eller-køb-idp-platform.md)
