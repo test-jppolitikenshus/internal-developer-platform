@@ -8,13 +8,20 @@ Hvis du vil oprette en ADR: [ADR dokumentation](https://github.com/test-jppoliti
 
 ## Indhold
 
-0. 🤔  [Registrering af beslutninger](000-registrering-af-beslutninger.md)
-1. 🤔  [Github som fælles kode repository](001-github-som-shared-code-repository.md)
-2. 🤔  [Byg eller køb IDP produkt](002-byg-eller-køb-idp-platform.md)
-3. 🤔  [Kubernetes som container orkestrering](003-kubernetes-som-container-orkestrering.md)
-4. 🤔  [Kubernetes multi-cluster vs multitenant strategi](004-multicluster-vs-multitenancy.md)
-5. 🤔  [Infrastructure as code](005-kubernetes-som-IAC.md)
-6. 🤔  [Support og kommunikation](006-support-og-kommunikation.md)
+0. 🤔  [Regstrering af beslutninger](000-registrering-af-beslutninger.md)
+0. 🤔  [Identity Provider](001-identity-provider.md)
+0. 🤔  [Primær cloud vendor](002-primary-cloud-vendor.md)
+0. 🤔  [Valg af cloud partner](003-cloud-partner.md)
+0. 🤔  [Fælles kode repository](004-shared-code-repository.md)
+0. 🤔  [Byg eller køb IDP produkt](005-byg-eller-køb-idp-platform.md)
+0. 🤔  [Container orkestrering](006-container-orkestrering.md)
+0. 🤔  [Infrastructure as Code](007-infrastructure-as-code-tool.md)
+0. 🤔  [Kubernetes som infrastructure provider](008-kubernetes-as-infrastructure-provider.md)
+0. 🤔  [Multicluster vs Multitenancy](009-multicluster-vs-multitenancy.md)
+0. 🤔  [Fælles artifact repository](010-shared-artifact-repository.md)
+0. 🤔  [Support & ansvar](011-support-og-kommunikation.md)
+0. 🤔  [Backup strategi](012-backup-strategi.md)
+ 
 
 ## Kommende ADRs:
 
