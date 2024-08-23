@@ -19,7 +19,7 @@ Samtidig kan disse dokumenter fungere som reference dokumentation for nye team m
 ## Beslutning
 
 Vi vil bruge Architecture Decision Records, som beskrevet af Michael Nygaard i artiklen [Documenting architecture decisions](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions)   
-Dokumentation af vores ADR process i [wikien](https://github.com/test-jppolitikenshus/internal-developer-platform/wiki/Architect-Decision-Records)
+Dokumentation af vores ADR process i [wiki](https://github.com/test-jppolitikenshus/internal-developer-platform/wiki/Architect-Decision-Records)
 
 ## Konsekvenser
 
