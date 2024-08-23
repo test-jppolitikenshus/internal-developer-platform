@@ -12,6 +12,8 @@ Forslag
 
 ## Kontekst
 
+*Handler det her om identitetsstyring eller GitOps?*
+
 Microsoft Entra benyttes allerede som IdP i AWS vha. AD-grupper, der relaterer til AWS permission sets.  
 Der skal etableres en struktur, der gør tildeling af brugeres rettigheder nemt og gennemskueligt, samt etableres audit trails og notifikationer, når medlemskaber ændres. Dette gælder både som en del af on/off boarding, løbende tilpasning af rettigheder og ved etablering eller ændring af services i self-service cloud kataloger.  
 Disse ændringer bør som udgangspunkt initieres fra vores git-struktur fremfor via servicedesk-tickets.  
@@ -27,6 +29,8 @@ Adgang til AWS-miljø bør beskyttes med VPN, med undtagelse af GitHub Actions O
 - Implementering af GitOps framework for at sikre, at ændringer i bruger adgang og rettigheder initieres gennem git. Dette sikrer en klar audit trail og konsistens i ændringer.
 - Integrere notifikationssystemer, som informerer om ændringer i medlemskaber, både som en del af on/off boarding og ved løbende tilpasninger. 
 - Adgang til AWS-miljøer skal gennemføres via VPN for at sikre yderligere sikkerhedslag. GitHub Actions OIDC undtages, da det allerede har de nødvendige sikkerhedsforanstaltninger.
+
+*Hvad menes der med adgang? - Konsol/modifikation/data-adgang?*
 
 ## Konsekvenser
 

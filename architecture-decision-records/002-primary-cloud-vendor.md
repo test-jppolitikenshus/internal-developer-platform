@@ -6,6 +6,17 @@
 
 ---
 
+* Hvor skal vi forklare forskellen mellem det, der er platformen, og det der er støttessystemer? 
+   - der er en platform, der handler om containere, og forskellige omkringliggende systemer, som databaser, storage, adgang til GPU'er, mailafsendelse, messaging, load balancers, api gateways med meget mere?
+   - Hvornår vælger vi at tænde loadbalancing inde i et cluster via operators, og hvornår vil vi gerne bruge AWS LB/API Gateways osv? 
+
+Man kunne også spørge hvad der:
+- drives inde i clustrene
+- orkestreres fra managementclusteret
+- orkestreres uden for clusteret, men har en binding til Kubernetes med forskellige iam-roller og lignende
+- eksisterer uden kendskab til clusteret. (Biller, regnorme, svalerne på himlen. Den slags.)
+
+
 ## Status
 
 Forslag
