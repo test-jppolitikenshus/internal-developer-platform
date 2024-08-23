@@ -68,8 +68,9 @@ Brug Kubernetes som containeradministration og samtidig fundament for vores udvi
 7. IAC-platform: Mulighed for at bruge kubernetes som infrastructure as code platform, og dermed opnå mulighed for cloud agnostisk gitops infrastruktur.
 
 Kubernetes er således en mere omfattende og fleksibel løsning til vores projekt.
+*Mere end hvad?*  (ECS matcher også 2, 4, 5, 6.)
 
-Kubernetes understøtter samtidig voers ideal beskrevet i vores [Manifest](https://github.com/test-jppolitikenshus/internal-developer-platform/wiki/Manifest) hvor hurtig onboarding og fokus på developer experience er central, ved at stille et så komplet som muligt udviklingsmiljø til rådighed for udviklerne.
+Kubernetes understøtter samtidig vores ideal beskrevet i vores [Manifest](https://github.com/test-jppolitikenshus/internal-developer-platform/wiki/Manifest) hvor hurtig onboarding og fokus på developer experience er central, ved at stille et så komplet som muligt udviklingsmiljø til rådighed for udviklerne.
 
 ## Konsekvenser
 
@@ -81,7 +82,7 @@ Kubernetes understøtter samtidig voers ideal beskrevet i vores [Manifest](https
 
 4. ECS control planes koster ikke noget, EKS koster 500 DKK / mdr pr cluster.
 
-5. Prioritering af container teknologi frem for serverless: Vi har, og fortsat får, meget udvikling i containere, men mangler ensretning/stordriftsfordele. Vi afviser ikke serverless, men ser containere som et passende aktuelt fokuspunkt.
+5. Prioritering af container teknologi frem for serverless: Vi har, og får fortsat, meget udvikling i containere, men mangler ensretning/stordriftsfordele. Vi afviser ikke serverless, men ser containere som et passende aktuelt fokuspunkt.
 
 ## Alternativer
 
@@ -97,6 +98,8 @@ Kubernetes understøtter samtidig voers ideal beskrevet i vores [Manifest](https
   - Begrænset til AWS, hvilket reducerer platformens agnostiske karakter.
   - Mangler avancerede funktioner, som Kubernetes-operatører og multi-cluster management.
   - Utilstrækkelig for drift af mere eksotisk software via operators.
+
+*Hvorfor understøtter ECS ikke multicluster management?*
 
 ### Docker Swarm
 
@@ -119,6 +122,7 @@ Kubernetes understøtter samtidig voers ideal beskrevet i vores [Manifest](https
   - Højere kapitalomkostninger og driftsomkostninger.
   - Reduceret skalerbarhed og fleksibilitet sammenlignet med cloud-løsninger.
   - Kræver dedikerede ressourcer til vedligeholdelse og administration.
+*Skal vi forholde os til Kubernetes på hjernet? EKS@Home?*
 
 ### CloudFoundry PaaS
 

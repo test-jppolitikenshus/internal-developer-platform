@@ -20,6 +20,7 @@ Vi skal vælge, om vi ønsker at standardisere vores infrastruktur ved at køre 
 
 1. **Konsistent driftsmiljø**:
    - Kubernetes sikrer ensartede miljøer på tværs af udviklings-, test- og produktionsmiljøer, hvilket reducerer konfigurationsafvigelser og øger stabiliteten.
+*Er det ikke iac, der sikrer ensartede miljøer?*
 
 2. **Nem opsætning af udviklingsmiljøer**:
    - Med Kubernetes kan vi nemt replikere produktionsmiljøer for udviklings- og testformål, hvilket fremmer hurtigere fejlfinding og produktudvikling.
@@ -58,3 +59,8 @@ En hybrid løsning kan måske realiseres ved at kombinere de bedste elementer fr
 ## Opsummering
 
 mjaeh...
+
+
+*Dette her synes jeg er den mest centrale beslutning lige nu. Jeg hører det som om vi er enige om Kubernetes osv. Men også at vi i temmelig høj grad kommer til at have en hybridløsning, for at få mest muligt ud af AWS.*
+
+

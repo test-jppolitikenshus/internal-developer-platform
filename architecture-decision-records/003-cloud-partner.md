@@ -18,6 +18,8 @@ Vi har en betydelig del af vores cloud-infrastruktur i AWS og søger måder at o
 
 Vi overvejer at indgå et partnerskab med en cloud-tjenesteudbyder, såsom AWS, Azure, Sentia, Google Cloud, Nordcloud, Kostner eller KeyCore, for at opnå en række fordele, som omfatter forbedret support, kostoptimering, konsulentbistand, adgang til solution architects, sikkerhedsscanninger samt regelmæssige reviews.
 
+*Det er ikke nogen beslutning at overveje noget.* Bør man ikke skrive, at "Vil vil indgå et partnerskab. -- Og så er forslagsdelen at finde ud af hvem, hvis man vedtager det?"
+
 ## Hvorfor vi bør indgå aftalen
 
 - **Effektiv vedligeholdelse af vores platforme**: En aftale vil give os mulighed for proaktiv rådgivning, arkitektur- og sikkerhedsanalyse samt adgang til on-site solution architects.

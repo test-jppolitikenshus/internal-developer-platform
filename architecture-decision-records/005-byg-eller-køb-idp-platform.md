@@ -10,6 +10,8 @@
 
 Forslag
 
+*Hvad er omfanget for IDP?*
+
 ## Kontekst
 
 Vi har brug for at nedbringe kognitiv load for vores udviklere samt effektivisere og i højere grad standardisere vores processer, dokumentation og teknologivalg for at sikre større transparens og lettere revision/compliance/governance. En IDP-platform (Internal Developer Platform) kan forbedre udviklings- og driftsprocesser ved at levere værktøjer og tjenester til interne teams. Beslutningen om at bygge en IDP selv eller købe en eksisterende løsning, såsom rig.dev, otomi.io, kratix.io, cnoe.io, backstack.dev, cycloid.io og quory.io, involverer en vurdering af forskellige faktorer.

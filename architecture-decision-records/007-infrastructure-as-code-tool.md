@@ -47,6 +47,8 @@ Vendor agnostiske produkter er Crossplane, Terraform og Pulumi - Pulumi er der s
 7. **Multi-cloud og hybrid-cloud support**:
    - Designet til at køre på tværs af on-premises, offentlige clouds og hybrid clouds. Konsistent ressourcehåndtering uanset lokation.
 
+*Men Crossplane er sort snak og en ukendt teknologi i jppol.*
+
 ### Fordele ved Terraform
 1. **Modenhed**:
    - Velafprøvet teknologi med mange anvendelsesmuligheder og best practices.
@@ -57,13 +59,15 @@ Vendor agnostiske produkter er Crossplane, Terraform og Pulumi - Pulumi er der s
 4. **Templates**:
    - Et bredt udvalg af skabeloner og moduler for hurtig opsætning.
 
+*Sammen med CDK er TF velkendt og vi har en del kompetencer in-house*
+
 ## Beslutning
 
 Efter at have vurderet fordele og ulemper ved Crossplane og Terraform, anbefaler vi at gå videre med **Crossplane** som vores primære IaC værktøj. Denne anbefaling er baseret på følgende årsager:
 
 1. **Kubernetes-integration**: Crossplane er dybt integreret med Kubernetes-økosystemet, hvilket muliggør seamless infra management.
 2. **Selvhelbredende egenskaber**: Giver os mulighed for at opretholde driftstiden og sikkerheden gennem selvhelbredende mekanismer.
-3. **Deklarativ konfiguration**: Muliggør en mere konsistent og forståelig konfigurationsstyring.
+3. **Deklarativ konfiguration**: Muliggør en mere konsistent og forståelig konfigurationsstyring. (*TF er vel også deklarativt.*)
 
 Dette valg understøtter vores målsætning om at implementere et GitOps baseret workflow, der er let tilgængeligt via GitHub. Fordelene ved denne tilgang inkluderer:
 

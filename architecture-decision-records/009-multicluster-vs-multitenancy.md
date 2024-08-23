@@ -45,6 +45,7 @@ Vi står overfor beslutningen om, hvorvidt vi skal implementere Kubernetes med m
 ### Ulemper
 1. **Kompleksitet**:
    - Øget operational kompleksitet med flere clusters at administrere.
+   - Men måske simplere opsætning af rettighedsstyring inden for de enkelte clustre.
 
 2. **Ressourceforbrug**:
    - Højere ressourcekrav og omkostninger for at opretholde flere clusters.
@@ -59,7 +60,7 @@ Vi står overfor beslutningen om, hvorvidt vi skal implementere Kubernetes med m
    - Deling af ressourcer mellem flere tenants, hvilket reducerer overall omkostninger.
 
 2. **Centraliseret administration**:
-   - Enkel administration af flere tenants fra en enkelt cluster.
+   - Enkel administration af flere tenants fra en enkelt cluster. (Og hvad betyder "enkel" - siger alle ikke at det er komplekst?)
 
 3. **Ressourceudnyttelse**:
    - Bedre udnyttelse af ressourcer ved at lade flere tenants dele de samme ressourcepuljer.

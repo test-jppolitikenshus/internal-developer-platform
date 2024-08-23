@@ -10,6 +10,8 @@
 
 Forslag
 
+*Er vel i praksis vedtaget allerede *
+
 ## Kontekst
 
 Vi har brug for en pålidelig Git-platform til at hoste, versionere og samarbejde om vores softwareprojekter. Flere muligheder bliver overvejet, herunder GitHub, GitLab, AWS CodeCommit, Bitbucket og Azure Repos.
