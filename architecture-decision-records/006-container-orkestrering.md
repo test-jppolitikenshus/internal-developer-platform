@@ -16,7 +16,7 @@ Vores cloud-infrastruktur har trods manglende fælles retningslinjer centreret s
 
 ## Beslutning
 
-EKS er managed kubernetes i vores fortruktne cloud provider AWS. Kubernetes er markedsleder, leverandør uafhængig, understøtter vores målsætning om Gitops i forbindelse med provisionering og vedligehold af IDP'ens infrastruktur.
+EKS er managed kubernetes i vores fortruktne cloud provider AWS. Kubernetes er markedsleder, leverandør uafhængig og understøtter vores målsætning om Gitops i forbindelse med provisionering og vedligehold af IDP'ens infrastruktur.
 
 ## Konsekvenser
 
