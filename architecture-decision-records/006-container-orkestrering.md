@@ -24,11 +24,7 @@ EKS er managed kubernetes i vores fortruktne cloud provider AWS. Kubernetes er m
 
 2. Vi har ikke pt folk nok med med erfaring i Kubernetes og IDP, og der vil være en stejl læringskurve for at opbygge og drifte platformen.
 
-3. Krav om at bruge en identitetsbroker til Kubernetes, OIDC direkte i EKS eller via identity center givet beslutningen om at bruge Azure Entra om identitetsudbyder.
-
-4. ECS control planes koster ikke noget, EKS koster 500 DKK / mdr pr cluster.
-
-5. Prioritering af container teknologi frem for serverless: Vi har, og fortsat får, meget udvikling i containere, men mangler ensretning/stordriftsfordele. Vi afviser ikke serverless, men ser containere som et passende aktuelt fokuspunkt.
+3. Prioritering af container teknologi frem for serverless: Vi fokuserer i første omgang på containere, hvilket nødvendigvis betyder at serverless ikke prioriteres endnu.
 
 ## Mere kontekst
 
