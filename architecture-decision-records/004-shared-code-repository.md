@@ -12,12 +12,21 @@ Forslag
 
 ## Kontekst
 
-Vi har brug for en pålidelig Git-platform til at hoste, versionere og samarbejde om vores softwareprojekter. Flere muligheder bliver overvejet, herunder GitHub, GitLab, AWS CodeCommit, Bitbucket og Azure Repos.
+Vi har brug for en Git-platform til at hoste, versionere og samarbejde om vores softwareprojekter i IDP og DUT. 
 
 ## Beslutning
 
-Vi foretrækker github.com enterprise cloud model, hvor:
+Vi vælger en github enterprise cloud model som kan samle alle eksisterende github organisationer, teams og repositories under èn konto.
 
+## Konsekvenser
+
+Vi vil få samlet alle vores repositories under en licens, og dermed potentielt spare licenser der i dag bruges på tværs af vores github organisationer.
+
+## Udybning
+
+Flere muligheder blev overvejet, herunder GitHub, GitLab, AWS CodeCommit, Bitbucket og Azure Repos.
+
+**Github Enterprise Cloud (Valgt)**
 - SSO via Entra
 - Eksisterende organisationer og teams kan flyttes til enterprise konto med eksisterende konfiguration/rettigheder
 - Eksisterende enterprise server kan blive, eller migreres til cloud med Enterprise Importer uden ekstra kost
@@ -36,21 +45,8 @@ Yderligere fordele ved Github vs:
 - Flest integrationer tilgængelig
 - Indeholder wiki, issue tracking, projekt styring
 
-## Konsekvenser
 
-Vi vil få samlet alle vores repositories under en licens, og dermed potentielt spare licenser der i dag bruges på tværs af vores github organisationer.
-Sikkerheds validering i forbindelse med brugerhåndtering og repos konfiguration gøres tilgængelig, samt evt. brug af Infrastructure as code til konfiguration/validering.
-De identificerede organisationer der ikke bruger github idag bør flytte til github ved lejlighed.
-
-Vi skal finde ud af, hvordan vi sikrer, at secrets og sensitive parametre beskyttes særligt i offentligt tilgængelig repositories, og på unmanaged CI/CD runners. 
-
-Vi bør overveje at implementere tiltag der mitigerer krav om VPN og/eller ip baseret pull request protection, ved at  behandle alle pull requests og repositries som usikre og teste koden i overenstemmelse hermed.
-
-
-## Alternativer
-
-Alternativ til enterprise cloud brugerstyring som beskrevet ovenfor, er enterprise management users (dette ønsker vi at undgå):
-
+**Github Enterprise Cloud Managed users**
 - Brugere synkroniseres fra AD til Github med SCIM
 - ingen personlige github konti
 - public repos er ikke mulig
@@ -58,8 +54,6 @@ Alternativ til enterprise cloud brugerstyring som beskrevet ovenfor, er enterpri
 - der skal skiftes bruger, hvis der skal tilgås github ressourcer med personlig konto
 - Er typisk kun nødvendigt i banker eller andre hårdt regulerede butikker
 - Vi mener enterprise management giver en usmidig oplevelse for de brugere, der allerede har en aktiv github handle - hvilket vil sige de fleste af vores udviklere. Samtidig udelukker det os fra samarbejder uden for koncernen, hvilket kan fungere usmidigt i forhold til eksterne samarbejdspartnere.
-
-Alternativer til Github:
 
 **AWS codecommit**
 
