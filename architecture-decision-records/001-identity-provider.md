@@ -27,4 +27,4 @@ ADFS er blevet udfaset.
 
 ## Alternativer
 
-Selvom der findes mange alternaltiver, fx. GitHub, AWS, Okta, Google, nævnes disse ikke nærmere da vi allerede har en solid integration med Microsoft Entra.
+Selvom der findes mange alternaltiver, fx. GitHub, AWS, Okta, Google, nævnes disse ikke nærmere da vi allerede har en gennemgribende og  velfungerende integration med Microsoft Entra.
