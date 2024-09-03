@@ -1,6 +1,6 @@
 ### Architecture Decision Record (ADR)
 
-#### Title: ADR 002 Byg en IDP-platform eller køb en eksisterende
+#### Title: ADR 005 Byg en IDP-platform eller køb en eksisterende
 
 #### Dato: 2024-08-15
 
@@ -24,7 +24,7 @@ Beslutningen om at bygge en IDP selv eller bruge en eksisterende løsning eller 
 - Otomi er købt af akamai for nylig
 
 **cnoe.io, backstack.dev**
-- Disse samler opensource og CNCF værktøjer i en let tilgængelig pakke.
+- Disse samler opensource og CNCF værktøjer i en "let" tilgængelig pakke.
 
 ## Beslutning
 
