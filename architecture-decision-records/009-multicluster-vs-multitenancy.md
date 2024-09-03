@@ -1,6 +1,6 @@
 ### Architecture Decision Record (ADR)
 
-#### Title: 004 Kubernetes Multicluster vs Multitenancy
+#### Title: 009 Kubernetes Multicluster vs Multitenancy
 
 #### Date: 2024-07-03
 
