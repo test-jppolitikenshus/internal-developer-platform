@@ -16,7 +16,7 @@ Vi skal vælge, om vi ønsker at standardisere vores infrastruktur ved at køre 
 
 ## Overvejelser
 
-### Fordele ved at bruge Kubernetes som infrastruktur provider
+### Fordele ved at bruge Kubernetes Services
 
 1. **Konsistent driftsmiljø**:
    - Kubernetes sikrer ensartede miljøer på tværs af udviklings-, test- og produktionsmiljøer, hvilket reducerer konfigurationsafvigelser og øger stabiliteten.
@@ -46,15 +46,12 @@ Vi skal vælge, om vi ønsker at standardisere vores infrastruktur ved at køre 
 En hybrid løsning kan måske realiseres ved at kombinere de bedste elementer fra begge verdener:
 
 1. **Udviklings- og testmiljøer i Kubernetes**:
-   - Brug Kubernetes til at opsætte og drifte udviklings- og testmiljøer, hvilket sikrer nem opsætning, konsistens og hurtig fejlfinding.
+   - Brug Kubernetes til at opsætte og drifte udviklings- og testmiljøer, hvilket sikrer nem opsætning, konsistens og hurtig fejlfinding. Localstack kan evt. undersøges til dev miljøer.
 
 2. **Produktion med både Kubernetes og Cloud Services**:
    - Drift af applikationer i Kubernetes i produktion for portabilitet og skalérbarhed.
    - Brugen af cloud-leverandørernes specialiserede tjenester.
      
-3. **Centrale automationspipelines**:
-   - Integrer Kubernetes og cloud services i centrale CI/CD pipelines for at automatisere deployment-processer og opretholde en høj udviklingshastighed. Dette hjælper med at holde en nem og konsistent deployment-struktur på tværs af både udviklings- og produktionsmiljøer.
-
 ## Opsummering
 
-mjaeh...
+Vi vil løbende tage stilling til balancen mellem at drive services som cloud-native og kubernetes-native.
