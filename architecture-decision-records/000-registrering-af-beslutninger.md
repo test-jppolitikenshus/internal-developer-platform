@@ -8,11 +8,11 @@ Forslag
 
 ## Kontekst
 
-Mens vi bygger platformen vil vi i træffe fælles beslutninger omkring grundlæggende arkitektur, processer, services og værktøjer.
+Mens vi bygger platformen vil vi træffe fælles beslutninger omkring grundlæggende arkitektur, processer, services og værktøjer.
 
 For at huske hvorfor vi har truffet disse beslutninger, og samtidig sikre en transparant beslutnings process, bør vi registrere disse beslutninger.
 
-Som skitseret i vores designprincipper, bør disse være offentligt tilgængelige, da åbenhed skaber ansvarlighed, transparens, sammenhæng og fællesskab.
+Som skitseret i vores IDP designprincipper, bør disse være offentligt tilgængelige, da åbenhed skaber ansvarlighed, transparens, sammenhæng og fællesskab.
 
 Samtidig kan disse dokumenter fungere som reference dokumentation for nye team medlemmer eller andre der måtte have interesse.
 
