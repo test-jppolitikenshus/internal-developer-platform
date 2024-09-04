@@ -12,19 +12,16 @@ Forslag
 
 ## Kontekst
 
-Vi skal vælge, om vi ønsker at standardisere vores infrastruktur ved at køre alle vores services i Kubernetes eller ved at anvende cloud-leverandørernes indbyggede tjenester. Dette valg påvirker vores driftsstrategi, administration og udviklingscyklus. Vi ønsker at vurdere fordelene og ulemperne ved begge tilgange og overveje, hvordan en hybrid løsning effektivt kan realiseres.
+Vi skal vælge i hvor høj grad vi ønsker at levere vores infrastruktur services i Kubernetes i cloud-leverandørernes indbyggede tjenester. Dette valg påvirker vores driftsstrategi, administration og udviklingscyklus. Vi ønsker at vurdere fordelene og ulemperne ved begge tilgange og overveje, hvordan en hybrid løsning effektivt kan realiseres.
 
 ## Overvejelser
 
 ### Fordele ved at bruge Kubernetes Services
 
-1. **Konsistent driftsmiljø**:
-   - Kubernetes sikrer ensartede miljøer på tværs af udviklings-, test- og produktionsmiljøer, hvilket reducerer konfigurationsafvigelser og øger stabiliteten.
+1. **Nem opsætning af udviklingsmiljøer**:
+   - Med Kubernetes kan vi potentielt nemt replikere produktionsmiljøer for udviklings- og testformål, hvilket fremmer hurtigere fejlfinding og produktudvikling.
 
-2. **Nem opsætning af udviklingsmiljøer**:
-   - Med Kubernetes kan vi nemt replikere produktionsmiljøer for udviklings- og testformål, hvilket fremmer hurtigere fejlfinding og produktudvikling.
-
-3. **Automatisering**:
+2. **Automatisering**:
    - Integration med CI/CD pipelines er ligetil med Kubernetes, hvilket fremmer automatiseret deployment og øger hastigheden på udviklingslivscyklusser.
 
 ### Fordele ved at bruge Cloud Services
@@ -43,15 +40,8 @@ Vi skal vælge, om vi ønsker at standardisere vores infrastruktur ved at køre 
 
 ## Hybrid Løsning
 
-En hybrid løsning kan måske realiseres ved at kombinere de bedste elementer fra begge verdener:
-
-1. **Udviklings- og testmiljøer i Kubernetes**:
-   - Brug Kubernetes til at opsætte og drifte udviklings- og testmiljøer, hvilket sikrer nem opsætning, konsistens og hurtig fejlfinding. Localstack kan evt. undersøges til dev miljøer.
-
-2. **Produktion med både Kubernetes og Cloud Services**:
-   - Drift af applikationer i Kubernetes i produktion for portabilitet og skalérbarhed.
-   - Brugen af cloud-leverandørernes specialiserede tjenester.
-     
+En hybrid løsning kan måske realiseres ved at kombinere de bedste elementer fra begge verdener - fx via produkter som localstack, eller infrastruktur kode kan skrives til at forholde sig til miljøet.
+   
 ## Opsummering
 
-Vi vil løbende tage stilling til balancen mellem at drive services som cloud-native og kubernetes-native.
+Vi vil løbende tage stilling til balancen mellem at drive services som cloud-native og kubernetes-native.*Dette her synes jeg er den mest centrale beslutning lige nu. Jeg hører det som om vi er enige om Kubernetes osv. Men også at vi i temmelig høj grad kommer til at have en hybridløsning, for at få mest muligt ud af AWS.*
