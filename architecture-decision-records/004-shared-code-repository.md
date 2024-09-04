@@ -12,17 +12,17 @@ Forslag
 
 ## Kontekst
 
-Vi har brug for en Git-platform til at hoste, versionere og samarbejde om vores softwareprojekter i IDP og DUT. 
+Vi har brug for en Git-platform til at hoste, versionere og samarbejde om vores softwareprojekter i IDP og i DUT som helhed. 
 
 ## Beslutning
 
-Vi vælger en github enterprise cloud model som kan samle alle eksisterende github organisationer, teams og repositories under èn konto.
+Vi vælger en github enterprise cloud model som kan samle alle eksisterende github organisationer, teams og repositories under èn konto. 
 
 ## Konsekvenser
 
-Vi vil få samlet alle vores repositories under en licens, og dermed potentielt spare licenser der i dag bruges på tværs af vores github organisationer.
+Vi vil få samlet alle vores repositories under en licens, og dermed potentielt spare licenser der i dag bruges på tværs af vores github organisationer. Fremadrettet vil vi kunne facilitere mulighed for fælles sikkerheds foranstaltninger, audits, Active Directory integration, sikkerheds scanning af repositories, samt CI/CD pipelines med GitHub Actions, og GitHub container registry til rådighed.
 
-## Udybning
+## Alternativer
 
 Flere muligheder blev overvejet, herunder GitHub, GitLab, AWS CodeCommit, Bitbucket og Azure Repos.
 
@@ -45,7 +45,6 @@ Yderligere fordele ved Github vs:
 - Flest integrationer tilgængelig
 - Indeholder wiki, issue tracking, projekt styring
 
-
 **Github Enterprise Cloud Managed users**
 - Brugere synkroniseres fra AD til Github med SCIM
 - ingen personlige github konti
@@ -56,7 +55,6 @@ Yderligere fordele ved Github vs:
 - Vi mener enterprise management giver en usmidig oplevelse for de brugere, der allerede har en aktiv github handle - hvilket vil sige de fleste af vores udviklere. Samtidig udelukker det os fra samarbejder uden for koncernen, hvilket kan fungere usmidigt i forhold til eksterne samarbejdspartnere.
 
 **AWS codecommit**
-
 - Integrerer med AWS services, primært IAM og S3, men platformen mangler det samme niveau af brugerfællesskab og tredjepartsintegrationer som GitHub.
 - Man får ikke noget foræret ved at bruge codecommit frem for github i AWS
 - Vores AWS solution architects foretrækker github, og kalder det crem de la creme of repositories
@@ -64,15 +62,12 @@ Yderligere fordele ved Github vs:
 - Codecommit er markeret som end-of-life pr. juli 2024.
 
 **Gitlab**
-
 - Selvom GitLab tilbyder omfattende CI/CD og DevOps værktøjer, er det mere komplekst og kan være overvældende at konfigurere – dette er ikke undersøgt nærmere.
 
 **Bitbucket**
-
 - Holdet.dk bruger bitbucket som de eneste i DUT (3 brugere)
 - God integration med Atlassian-værktøjer som Jira, men har en mindre brugervenlig grænseflade og et mindre aktivt samfund sammenlignet med GitHub.
 
 **Azure Repos**
-
 - Vi bruger det ikke i dag
 - Bedre egnet til teams der allerede bruger Azure
