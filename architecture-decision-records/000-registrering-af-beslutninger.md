@@ -4,7 +4,7 @@ Dato: 2024-04-29
 
 ## Status
 
-Forslag
+Godkendt
 
 ## Kontekst
 
