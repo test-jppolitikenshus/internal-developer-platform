@@ -22,7 +22,8 @@ Vi skal vælge det bedste kommunikationsværktøj til vores IDP Team. Vi skal ev
 - Mange producenter stiller Slack-kanal til rådighed, hvorfor kendskab og udbredelse er stor.
 - Man ville potentielt få besparelse, da der ligesom github idag er folk med flere konti på tværs af DUT.
 
-## Teams (Kanaler)
+## Teams 
+### Kanaler
 
 - Kan modtage mails fra eksterne og interne brugere.
 - Kan ikke acceptere eksterne chat-brugere uden for JPPOL, med undtagelse af "General" kanalen.
@@ -30,7 +31,7 @@ Vi skal vælge det bedste kommunikationsværktøj til vores IDP Team. Vi skal ev
 - Tråde er forvirrende - når man svarer i en tråd, flytter hele beskeden i tidslinjen, men personen der svarer i en tråd, ser den i tid indtil vedkomne reloader, så er tidslinjen forskudt.
 - Hvis man tilføjer personer til en kanal, får de ikke historik med.
 
-## Teams (Chats)
+### Chats
 
 - Der findes kun shortcut til at redigere den seneste besked (pil op).
 - Der er ingen trådfunktion: [Feedback](https://feedbackportal.microsoft.com/feedback/idea/328070b5-7dcd-ed11-a81b-002248519701)
