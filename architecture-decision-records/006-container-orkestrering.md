@@ -16,7 +16,17 @@ Vores cloud-infrastruktur har trods manglende fælles retningslinjer centreret s
 
 ## Beslutning
 
-EKS er managed kubernetes i vores fortruktne cloud provider AWS. Kubernetes er markedsleder, leverandør uafhængig og understøtter vores målsætning om Gitops i forbindelse med provisionering og vedligehold af IDP'ens infrastruktur.
+Brug EKS (AWS managed Kubernetes) som containeradministration og samtidig potentielt fundament for vores udviklings platform. I valget af EKS fremfor ECS er der lagt særligt vægt på at:
+
+1. Fleksibilitet og Portabilitet: Kubernetes kan køre på enhver cloud eller lokal infrastruktur og undgår leverandørbinding.
+
+2. Stærkt Økosystem: Kubernetes har et meget stort community og et rigt udvalg af værktøjer og services, og forventes at kunne tiltrække kandidater i højere grad.
+
+3. IAC-platform: Mulighed for at bruge kubernetes som infrastructure as code platform, og dermed opnå mulighed for cloud agnostisk gitops infrastruktur.
+
+Kubernetes er således en mere omfattende og fleksibel løsning til vores projekt.
+
+Kubernetes understøtter samtidig vores ideal beskrevet i vores [Manifest](https://github.com/test-jppolitikenshus/internal-developer-platform/wiki/Manifest) hvor hurtig onboarding og fokus på developer experience er central, ved at kunne stille et så komplet som muligt udviklingsmiljø til rådighed for udviklerne.
 
 ## Konsekvenser
 
@@ -65,62 +75,36 @@ Fra ovenstående liste af produkter er Kubernetes den klare markedsleder og unde
 - Øget støtte til Kubernetes som implementeringsmål for kommercielle og open-source softwareprojekter
 - Kubernetes er en populær teknologi, mange udviklere har erfaring med det, hvilket er vigtigt ifbm ekruttering og fastholdelse
 
-### AWS EKS (Valgt)
-
-Brug Kubernetes som containeradministration og samtidig fundament for vores udviklings platform. I valget af EKS fremfor ECS er der lagt særligt vægt på at:
-
-1. Fleksibilitet og Portabilitet: Kubernetes kan køre på enhver cloud eller lokal infrastruktur og undgår leverandørbinding.
-
-2. Stærkt Økosystem: Kubernetes har et meget stort community og et rigt udvalg af værktøjer og services, og forventes at kunne tiltrække kandidater i højere grad.
-
-3. IAC-platform: Mulighed for at bruge kubernetes som infrastructure as code platform, og dermed opnå mulighed for cloud agnostisk gitops infrastruktur.
-
-Kubernetes er således en mere omfattende og fleksibel løsning til vores projekt.
-
-Kubernetes understøtter samtidig vores ideal beskrevet i vores [Manifest](https://github.com/test-jppolitikenshus/internal-developer-platform/wiki/Manifest) hvor hurtig onboarding og fokus på developer experience er central, ved at stille et så komplet som muligt udviklingsmiljø til rådighed for udviklerne.
-
 ### AWS ECS (Elastic Container Service)
 
-- **Fordele**:
   - Kan nemt integreres med andre AWS-tjenester såsom ALB, API Gateway, Security Groups, NACLs osv.
   - Ingen separate control plane omkostninger som ved EKS.
   - Lettere at administrere for rene applikationscontainer-skaleringer.
-
-- **Ulemper**:
   - Mindre støttet i det bredere økosystem af værktøjer og teknologier sammenlignet med Kubernetes.
   - Begrænset til AWS, hvilket reducerer platformens agnostiske karakter.
-  - Mangler avancerede funktioner, som Kubernetes-operatører og multi-cluster management.
   - Utilstrækkelig for drift af mere eksotisk software via operators.
 
 ### Docker Swarm
 
-- **Fordele**:
   - Indbygget i Docker, nem at sætte op og administrere.
   - God for simple container-koordineringsbehov.
-
-- **Ulemper**:
   - Mangler mange af de avancerede funktioner og skaleringsmuligheder, som Kubernetes tilbyder.
   - Mindre community og økosystem sammenlignet med Kubernetes.
   - Ikke velegnet for komplekse og skalerbare produktionsmiljøer.
 
 ### On-Premises Løsning
 
-- **Fordele**:
   - Fuldstændig kontrol over hardwaren og softwaremiljøet.
   - Kan være økonomisk fordelagtigt ved meget store workloads.
-
-- **Ulemper**:
   - Højere kapitalomkostninger og driftsomkostninger.
   - Reduceret skalerbarhed og fleksibilitet sammenlignet med cloud-løsninger.
   - Kræver dedikerede ressourcer til vedligeholdelse og administration.
+  - Kan integreres i ECS/EKS Anywhere for hybrid løsning.
 
 ### CloudFoundry PaaS
 
-- **Fordele**:
   - Kører på toppen af Kubernetes og bringer PaaS funktionaliteter.
   - God til udviklerproduktivitet og hurtig applikationsudrulning.
-
-- **Ulemper**:
   - Komplekst at administrere i store skalaer.
   - Mindre fleksibilitet i forhold til Kubernetes for specifikke tilpassede behov.
 
