@@ -14,6 +14,12 @@ Forslag
 
 Vi skal vælge det bedste kommunikationsværktøj til vores IDP Team. Vi skal evaluere fordele og ulemper ved både Slack og Teams inden vi træffer en beslutning. Slack anslås at koste ca. 40.000 kr. pr. måned i DUT regi.
 
+## Beslutning
+
+Vi afventer fælles Slack subscription.
+Indtil da har vi en mail addresse (idp@jppol.dk)
+(Detaljer om den endelige beslutning, når denne er truffet)
+
 ## Slack
 
 - Føles lækker at bruge.
@@ -43,9 +49,7 @@ Vi skal vælge det bedste kommunikationsværktøj til vores IDP Team. Vi skal ev
 
 
 
-## Beslutning
 
-(Detaljer om den endelige beslutning, når denne er truffet)
 
 ## Alternativer
 
