@@ -12,7 +12,7 @@ Forslag
 
 ## Kontekst
 
-Vi skal vælge i hvor høj grad vi ønsker at levere vores infrastruktur services i Kubernetes i cloud-leverandørernes indbyggede tjenester. Dette valg påvirker vores driftsstrategi, administration og udviklingscyklus. Vi ønsker at vurdere fordelene og ulemperne ved begge tilgange og overveje, hvordan en hybrid løsning effektivt kan realiseres.
+Vi skal vælge i hvor høj grad vi ønsker at levere vores infrastruktur services i Kubernetes eller med cloud-leverandørernes indbyggede tjenester (ex postgres). Dette valg påvirker vores driftsstrategi, administration og udviklingscyklus. Vi ønsker at vurdere fordelene og ulemperne ved begge tilgange og overveje, hvordan en hybrid løsning effektivt kan realiseres.
 
 ## Overvejelser
 
