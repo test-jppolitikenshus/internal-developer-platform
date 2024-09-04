@@ -35,5 +35,5 @@ Beslutningen om at bygge en IDP selv eller bruge en eksisterende løsning eller 
 
 ## Alternativer
 
-(Listning af mulige alternativer, der kan overvejes)
+(Listning af mulige alternativer, der kan overvejes):  
 https://platformengineering.org/platform-tooling
