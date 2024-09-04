@@ -12,7 +12,7 @@ Forslag
 
 ## Kontekst
 
-Vores cloud-infrastruktur har trods manglende fælles retningslinjer centreret sig om containere - derfor er det oplagt at IDP som noget af det første fokuserer på container drift.
+Vores cloud-infrastruktur har trods manglende fælles retningslinjer centreret sig om containere - derfor er det oplagt at IDP som noget af det første fokuserer på container drift - vi skal i IDP regi beslutte, hvordan vi ønsker at drive container infrastruktur. 
 
 ## Beslutning
 
@@ -36,14 +36,6 @@ Vores tilgang til administration og ejerskab af infrastruktur i DUT, herunder EB
 
 Givet det nuværende teknologilandskab inden for DUT, ønsker vi en containeradministrationsplatform, der på sigt kan understøtte en bred vifte af applikationer, fra "moderne" cloud-native [12-faktor applikationer](https://12factor.net) til "legacy" stateful monolitiske applikationer, potentielt omfattende både Linux- og Windows-baserede applikationer.
 
-Fra ovenstående liste af produkter er Kubernetes den klare markedsleder og understøtter både applikationer og infrastrukturbehov. Kubernetes har følgende fordele:
-
-- Stor adoption - allerede siden 2017 etableredes Kubernetes som facto industristandard
-- Der findes managed Kubernetes-tjenester fra alle større cloud providere
-- Bredt økosystem af understøttende værktøjer og teknologier
-- Øget støtte til Kubernetes som implementeringsmål for kommercielle og open-source softwareprojekter
-- Kubernetes er en populær teknologi, mange udviklere har erfaring med det, hvilket er vigtigt ifbm ekruttering og fastholdelse
-
 Der er præcedens for brug af Kubernetes inden for DUT, da AI og EB teams har bygget deres platforme på Kubernetes.   
 Der er også præcedens for brug af ECS inden for DUT, da JP og koncernen har bygget deres platforme på ECS.
 
@@ -65,28 +57,27 @@ Der eksisterer flere produkter, der specifikt fokuserer på at køre og administ
 - Hashicorp Nomad (apparently dead)
 - Apache Mesos (mere kompleks end Kubernetes, og ikke så populær)
 
+Fra ovenstående liste af produkter er Kubernetes den klare markedsleder og understøtter både applikationer og infrastrukturbehov. Kubernetes har følgende fordele:
+
+- Stor adoption - allerede siden 2017 etableredes Kubernetes som facto industristandard
+- Der findes managed Kubernetes-tjenester fra alle større cloud providere
+- Bredt økosystem af understøttende værktøjer og teknologier
+- Øget støtte til Kubernetes som implementeringsmål for kommercielle og open-source softwareprojekter
+- Kubernetes er en populær teknologi, mange udviklere har erfaring med det, hvilket er vigtigt ifbm ekruttering og fastholdelse
 
 ### AWS EKS (Valgt)
 
-Brug Kubernetes som containeradministration og samtidig fundament for vores udviklings platform. Læg særligt vægt på at:
+Brug Kubernetes som containeradministration og samtidig fundament for vores udviklings platform. I valget af EKS fremfor ECS er der lagt særligt vægt på at:
 
 1. Fleksibilitet og Portabilitet: Kubernetes kan køre på enhver cloud eller lokal infrastruktur og undgår leverandørbinding.
 
-2. Avancerede skaleringsmuligheder: Kubernetes kan skalere automatisk baseret på ressourceudnyttelse og håndterer høje trafikbelastninger effektivt.
+2. Stærkt Økosystem: Kubernetes har et meget stort community og et rigt udvalg af værktøjer og services, og forventes at kunne tiltrække kandidater i højere grad.
 
-3. Stærkt Økosystem: Kubernetes har et meget stort community og et rigt udvalg af værktøjer og services, og forventes at kunne tiltrække kandidater i højere grad.
-
-4. Moden Arkitektur: Kubernetes tilbyder self-healing, automatiserede deployments og rollbacks samt dynamisk konfigurationsstyring.
-
-5. CI/CD Integration: Kubernetes integreres problemfrit med CI/CD pipelines for mere effektive udviklingsforløb.
-
-6. Multi-Cluster Management: Kubernetes understøtter multi-cluster management for høj tilgængelighed og katastrofeberedskab.
-
-7. IAC-platform: Mulighed for at bruge kubernetes som infrastructure as code platform, og dermed opnå mulighed for cloud agnostisk gitops infrastruktur.
+3. IAC-platform: Mulighed for at bruge kubernetes som infrastructure as code platform, og dermed opnå mulighed for cloud agnostisk gitops infrastruktur.
 
 Kubernetes er således en mere omfattende og fleksibel løsning til vores projekt.
 
-Kubernetes understøtter samtidig voers ideal beskrevet i vores [Manifest](https://github.com/test-jppolitikenshus/internal-developer-platform/wiki/Manifest) hvor hurtig onboarding og fokus på developer experience er central, ved at stille et så komplet som muligt udviklingsmiljø til rådighed for udviklerne.
+Kubernetes understøtter samtidig vores ideal beskrevet i vores [Manifest](https://github.com/test-jppolitikenshus/internal-developer-platform/wiki/Manifest) hvor hurtig onboarding og fokus på developer experience er central, ved at stille et så komplet som muligt udviklingsmiljø til rådighed for udviklerne.
 
 ### AWS ECS (Elastic Container Service)
 
