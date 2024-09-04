@@ -12,12 +12,12 @@ Forslag
 
 ## Kontekst
 
-Vi skal sikre at vores brugere nemt opnår adgang til platformen, samt at de automatisk fjernes igen når de ikke længere skal have adgang.
+Vi skal sikre at vores brugere nemt kan opnå adgang til platformen, samt at de automatisk fjernes igen når de ikke længere skal have adgang.
 Microsoft Entra benyttes allerede som IdP i huset.
 
 ## Beslutning
 
-Vi vil bruge Microsoft Entra IdP, da det allerede er integreret i vores eksisterende systemer, inklusive AWS, hvilket giver os den fordel, at vores brugere kun eksisterer èt sted. Desuden tilbyder Microsoft Entra Single Sign-ON (SSO). På længere sigt vil vi kunne administrere rettigheder til platformen direkte fra platformen.
+Vi vil bruge Microsoft Entra IdP, da det allerede er integreret i vores eksisterende systemer, inklusive AWS, hvilket giver os den fordel, at vores brugere kun eksisterer èt sted. Desuden tilbyder Microsoft Entra Single Sign-ON (SSO). På længere sigt vil vi potentielt kunne administrere rettigheder til platformen direkte fra platformen.
 
 ## Konsekvenser
 
