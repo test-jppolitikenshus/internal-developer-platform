@@ -26,7 +26,7 @@ Vi skal minimere risikoen for vendor lock-in, men vi anderkender, at det aldrig 
 
 ## Alternativer
 
-Alternativt kunne vi vælge en anden primær cloud leverandør, at satse på on-prem eller at fokusere på multicloud - Vi ser det som fordelagtigt at fokusere vores indsats på èn udbyder til at starte med - on-prem TODO
+Alternativt kunne vi vælge en anden primær cloud leverandør, at satse på on-prem eller at fokusere på multicloud - Vi ser det som fordelagtigt at fokusere vores indsats på èn udbyder til at starte med. 
 
 
 
