@@ -17,26 +17,14 @@ Vi skal vælge i hvor høj grad vi ønsker at levere vores infrastruktur service
 ## Overvejelser
 
 ### Fordele ved at bruge Kubernetes Services
-
-1. **Nem opsætning af udviklingsmiljøer**:
-   - Med Kubernetes kan vi potentielt nemt replikere produktionsmiljøer for udviklings- og testformål, hvilket fremmer hurtigere fejlfinding og produktudvikling.
-
-2. **Automatisering**:
-   - Integration med CI/CD pipelines er ligetil med Kubernetes, hvilket fremmer automatiseret deployment og øger hastigheden på udviklingslivscyklusser.
+   - Med Kubernetes kan vi potentielt nemt **replikere produktionsmiljøer** for udviklings- og testformål, hvilket fremmer hurtigere fejlfinding og produktudvikling.
+   - Integration med CI/CD pipelines er ligetil med Kubernetes, hvilket fremmer **automatiseret deployment** og øger hastigheden på udviklingslivscyklusser.
 
 ### Fordele ved at bruge Cloud Services
-
-1. **Specialiserede tjenester**:
-   - Cloud-leverandørernes tjenester som RDS (Managed Databases), EBS (Elastic Block Store), EFS (Elastic File System), S3 (Object Storage), SQS (Simple Queue Service), SNS (Simple Notification Service) og Secret Manager tilbyder specialiseret funktionalitet, ydeevneoptimering og management.
-
-2. **Operational overhead**:
-   - Anvendelse af managed services reducerer den operational overhead ved at vedligeholde og opdatere systemerne, hvilket frigør ressourcer og reducerer risiciene.
-
-3. **Indbyggede sikkerheds- og compliance-funktioner**:
-   - Mange cloud-leverandører tilbyder certificerede sikkerheds- og compliance-funktioner, hvilket kan være mere tidseffektivt end at skabe disse fra bunden i Kubernetes.
-
-4. **Optimeret ydeevne**:
-   - Cloud-tjenester er optimeret og skaleret til høj ydeevne og belastning, hvilket kan være svært at matche med selv-administrerede systemer.
+   - Cloud-leverandørernes tjenester som RDS (Managed Databases), EBS (Elastic Block Store), EFS (Elastic File System), S3 (Object Storage), SQS (Simple Queue Service), SNS (Simple Notification Service) og Secret Manager tilbyder **specialiseret funktionalitet, ydeevneoptimering og management**.
+   - Anvendelse af managed services **reducerer operational overhead** ved at vedligeholde og opdatere systemerne, hvilket frigør ressourcer og reducerer risiciene.
+   - Mange cloud-leverandører tilbyder certificerede **indbyggede sikkerheds- og compliance-funktioner**, hvilket kan være mere tidseffektivt end at skabe disse fra bunden i Kubernetes.
+   - Cloud-tjenester er optimeret og skaleret til **høj ydeevne og belastning**, hvilket kan være svært at matche med selv-administrerede systemer.
 
 ## Hybrid Løsning
 
